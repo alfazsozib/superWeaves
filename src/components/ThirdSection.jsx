@@ -1,12 +1,18 @@
 import React from "react";
 import bgShadow from "../components/images/shadow2.png";
 import pinkBg from "../components/bg/Ellipse 4.png";
+import ellips from "../components/bg/Ellipse 30.png";
 import pinkBG from "../components/bg/pinkbg.png";
+import blueBG from "../components/bg/bluebg.png"
+import pinkBlue from "../components/bg/pinkBlue.png"
 import polygon from "../components/bg/Polygon 3.png";
 import bgShadow2 from "../components/images/shadow1.png";
+import bgShadow3 from "../components/images/shadow3.png";
 import mid_banner from "../components/images/mid_banner.jpeg";
 import mid_banner2 from "../components/images/mid_banner2.jpeg";
 import card1 from "../components/cards/image38.png";
+import blankCard from "../components/images/Card.png";
+import { Cards } from "./data/Cards";
 
 function ThirdSection() {
   return (
@@ -108,13 +114,112 @@ function ThirdSection() {
               </div>
             </div>
             <div className="text-area">
-              <p className=" p-16 z-10 font-semibold font-quantico text-2xl leading-loose">
+              <p className=" p-16 text-center z-10 font-semibold font-quantico text-2xl leading-loose">
                 At DWØPE, we elevate betting to an art form with our diverse
                 range of prediction pools. From the movements in the financial
                 markets to the outcomes of world events, your bets are placed on
                 the future as it unfolds. Place a bet today and experience the
                 magic of DWØPE, all without ever needing to leave SuperWeaves.
               </p>
+              <div className="blank_cards z-10 relative p-16 flex flex-wrap justify-evenly">
+                <img width={200} src={blankCard} alt="" />
+                <img width={200} src={blankCard} alt="" />
+                <img width={200} src={blankCard} alt="" />
+                <img width={200} src={blankCard} alt="" />
+                <img width={200} src={blankCard} alt="" />
+                <div>
+                  <img
+                    className="absolute z-[-10] left-[-100px] bottom-60 blur-sm"
+                    width={300}
+                    src={bgShadow2}
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div className="text-are">
+                <p className="p-16 z-10 relative font-quantico text-2xl leading-loose">
+                  <div>
+                    <img
+                      width={450}
+                      className="absolute left-0 bottom-[-60px]"
+                      src={ellips}
+                      alt=""
+                    />
+                  </div>
+                  <div className="">
+                    <img
+                      width={200}
+                      className="absolute right-[0]  z-[-10] blur-sm bottom-[-120px]"
+                      src={bgShadow3}
+                      alt=""
+                    />
+                  </div>
+                  With seamless integration across devices and platforms, DWØPE
+                  ensures that your betting experience is fluid, intuitive, and
+                  always a tap away. Whether you're analyzing trends or placing
+                  bets, our interface is crafted for clarity, speed, and ease of
+                  use. Our platform transforms betting into a cerebral sport,
+                  combining the excitement of risk with the satisfaction of
+                  well-played foresight.
+                </p>
+              </div>
+              <div className="text-area mt-12">
+                <p className="font-superLagend text-center text-2 text-4xl ">
+                  The DWØPE NFT Experience
+                </p>
+                <p className="p-16 font-quantico text-2xl leading-loose">
+                  Embrace the diversity of DWØPE's NFT collection, from the
+                  whimsical charm of WEEPLE characters to the majestic might of
+                  DWAGONs. Each NFT serves as your digital alter ego, an avatar
+                  that not only represents you but also empowers you with
+                  special abilities.
+                </p>
+              </div>
+
+              <div className="avatar-box flex flex-wrap justify-center gap-10 p-16">
+                {Cards.map((item, index) => (
+                  <div
+                    key={item.id}
+                    className="av-cards rounded-2xl w-[300px] bg-[#2e2c2c5e] bg"
+                  >
+                    <div>
+                      <img
+                        className="bg-cover rounded-2xl bg-no-repeat bg-center"
+                        width={300}
+                        src={item.image}
+                        alt="av"
+                      />
+                    </div>
+                    <div className="data-sec px-4 py-2">
+                      <div className="flex justify-between ">
+                        <span className="font-superLagend text-lg">
+                          {item.title}
+                        </span>
+                        <span className="font-superLagend text-lg">
+                          {item.id}
+                        </span>
+                      </div>
+                      <span>{item.about}</span>
+                    </div>
+                  </div>
+                ))}
+
+                <div className="text-area relative">
+                  <p className="p-16 text-center font-quantico text-2xl leading-loose ">
+                    <span>
+                        <img width={800} className="absolute z-[-10] bottom-10 right-[-50px] overflow-hidden" src={pinkBlue} alt="" />
+                    </span>
+                    Trade, auction, and leverage your NFTs in a player-driven
+                    market that values rarity, utility, and the story behind
+                    each piece. Beyond their visual appeal, these digital assets
+                    unlock special features, grant access to exclusive content,
+                    and enhance your experience across our platform. From
+                    in-game advantages to VIP event access, your NFTs serve as
+                    the gateway to having the DWØPEst experience in SuperWeaves.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
