@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: #E1E1E1;
+}
+
+
+.banner{
+    width: 100%;
+    height: 24rem;
+    position: absolute;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@font-face {
+    font-family: 'Super Lagend Boy';
+    src: url("../src/components/fonts/super-legend-boy.ttf");
+}
+
+@font-face {
+    font-family: TwistTwist;
+    src: url("../src/components/fonts/TwistTwist.ttf");
+}
+
+.title{
+
+    background: linear-gradient(126.02deg, #F03336 18.64%, rgba(236, 146, 101, 0.930805) 50.09%, #F6EC94 91.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px #E1E1E1;
+
+
+
+}
+
+
+.text{
+
+    background: linear-gradient(90deg, #D90A27 9.29%, #F46124 25.9%, #F3C70D 38.57%, #017E3D 55%, #0841B6 67.16%, #A4047C 82.57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    mix-blend-mode: normal;
+
+}
+
+.text-2{
+    background: linear-gradient(90.02deg, #F03336 30.64%, #EC9265 40.09%, #F6EC94 100.79%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 10px 20px rgba(154, 127, 30, 0.873);
+
+}
+
+.pinkBlueBg {
+
+    background-image: url("./components/bg/pinkBlue.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background: transparent;
+  }
+
+.card-title{
+
+background: linear-gradient(150.74deg, #f80307eb 80.82%, #FE0BBA 100.8%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+margin-top: 2rem;
+text-shadow: 0px 10px 20px rgba(229, 9, 207, 0.873);
+
 }
