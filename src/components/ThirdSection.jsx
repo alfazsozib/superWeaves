@@ -18,9 +18,10 @@ import Faq from "./Faq";
 import { Model } from "./Model";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import { cardData } from "./data/Models"; 
+
 
 function ThirdSection() {
-  
   return (
     <>
       <div className="">
@@ -50,37 +51,22 @@ function ThirdSection() {
             <div className="polygon absolute">
               <img src={polygon} alt="" />
             </div>
-            <div className="cards relative flex justify-around p-16">
-  
-                <Canvas camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
+            <div className="cards relative flex justify-around">
+                <div className="w-[100%] flex gap-2 p-2">
+                {cardData.map((id,index)=>
+                <Canvas style={{height:"320px", width:"200px"}} camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
                   <ambientLight intensity={5} />
                   <OrbitControls enableZoom={true} />
-                  <Model />
+                  <Model path={id.path}/>
                 </Canvas>
-
-                <Canvas camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
-                  <ambientLight intensity={5} />
-                  <OrbitControls enableZoom={true} />
-                  <Model />
-                </Canvas>
-                <Canvas camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
-                  <ambientLight intensity={5} />
-                  <OrbitControls enableZoom={true} />
-                  <Model />
-                </Canvas>
-                <Canvas camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
-                  <ambientLight intensity={5} />
-                  <OrbitControls enableZoom={true} />
-                  <Model />
-                </Canvas>
-           
-              
+                )}
+                </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="absolute w-1/2 right-16 ">
+      <div className="absolute w-1/2 right-16 mt-12 ">
         <div className="text-right">
           <p className="font-quantico text-xl leading-loose font-semibold">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to

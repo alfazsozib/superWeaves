@@ -2,8 +2,9 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF("/bcp1.glb");
+export function Model({path, ...props}) {
+  const { nodes, materials } = useGLTF(path);
+  console.log(path)
   return (
     <group {...props} dispose={null}>
       <group
@@ -27,5 +28,3 @@ export function Model(props) {
     </group>
   );
 }
-
-useGLTF.preload("/bcp1.glb");

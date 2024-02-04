@@ -1,9 +1,16 @@
-import React from "react";
+import React,{ useRef } from "react";
 import card from "../components/images/Card1.png";
 import purpleBg from "../components/bg/pinkBlue.png";
 import blueBg from "../components/bg/bluebg.png";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { cardData } from "./data/Models"; 
+import bcp10 from "../components/players/bcp10.glb"
+import { Model } from "./Model";
+import { useGLTF } from "@react-three/drei";
 
 function Meta() {
+  const { nodes, materials } = useGLTF(bcp10);
   return (
     <div className="first-section ">
       <div>
@@ -24,7 +31,33 @@ function Meta() {
         <div className="relative top-56">
           <div className="flex justify-around">
             <div className="card-side">
-              <img className="relative z-10" src={card} alt="card sample" />
+              {/* <img className="relative z-10" src={card} alt="card sample" /> */}
+              <Canvas style={{height:"400px", width:"300px",position:"relative", zIndex:1}} camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
+                  <ambientLight intensity={5} />
+                  <OrbitControls enableZoom={true} />
+                  <group >
+                    <group
+                      position={[-0.025, 1.092, 0.375]}
+                      rotation={[1.482, 0, 0]}
+                      scale={[0.559, 2, 1]}
+                    >
+                      <mesh
+                        castShadow
+                        receiveShadow
+                        geometry={nodes.Plane_1.geometry}
+                        material={materials.Front}
+                      />
+                      <mesh
+                        castShadow
+                        receiveShadow
+                        geometry={nodes.Plane_2.geometry}
+                        material={materials.Back}
+                      />
+                    </group>
+                  </group>
+      
+                </Canvas>
+
               <div className="">
                 <img
                   className="absolute top-32 w-[55rem] left-[-400px]"
