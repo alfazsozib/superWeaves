@@ -12,6 +12,7 @@ function Faq() {
   const [isCollapsed3, setIsCollapsed3] = useState(true);
   const [isCollapsed4, setIsCollapsed4] = useState(true);
   const [isCollapsed5, setIsCollapsed5] = useState(true);
+  const [isCollapsed6, setIsCollapsed6] = useState(true);
 
   const handleToggleCollapse1 = () => {
     setIsCollapsed1(!isCollapsed1);
@@ -28,19 +29,21 @@ function Faq() {
   const handleToggleCollapse5 = () => {
     setIsCollapsed5(!isCollapsed5);
   };
-
+  const handleToggleCollapse6 = () => {
+    setIsCollapsed6(!isCollapsed6);
+  };
   return (
     <div className="faq-section pb- relative">
       <div className="absolute blur-md left-[-320px]">
         <img width={200} src={fl1} alt="" />
       </div>
-      <div className="absolute blur-md right-[-220px] overflow-hidden">
+      <div className="absolute blur-md right-[-70px] overflow-hidden">
         <img width={150} src={fl2} alt="" />
       </div>
-      <div className="absolute blur-sm left-[-320px] bottom-[-80px] rotate-12 overflow-hidden">
+      <div className="absolute blur-sm left-[-200px] bottom-[-80px] rotate-12 overflow-hidden">
         <img width={200} src={fl3} alt="" />
       </div>
-      <div className="absolute blur-md right-[-150px] bottom-[-150px] rotate-45 overflow-hidden">
+      <div className="absolute blur-md right-[-5px] bottom-[-150px] rotate-45 overflow-hidden">
         <img width={150} src={fl4} alt="" />
       </div>
       <div className="flex flex-col justify-center relative items-center gap-14">
@@ -53,134 +56,158 @@ function Faq() {
             Frequently Asked Questions
           </h1>
         </div>
-        <div className=" flex flex-col gap-4 text-[#e0dede]">
-          <div className="bg-[#0000007e] relative rounded-xl w-[800px] p-6 flex flex-col justify-end gap-4">
-            <button
-              onClick={handleToggleCollapse1}
-              className="flex justify-end"
-            >
-              <p className="font-superLagend absolute left-6">
-                Why are there 6 collections ?
-              </p>
-              {isCollapsed1 ? (
-                <IoIosArrowDropdown size={30} />
-              ) : (
-                <IoIosArrowDropup size={30} />
+        <div className="flex gap-24 text-[#e0dede]">
+          <div className="flex flex-col gap-6">
+            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+              <button className="flex" onClick={handleToggleCollapse1}>
+                <div>
+                  <p className="font-superLagend text-left relative left-0 ">
+                  What makes SuperWeaves different from other Metaverse platforms?
+                  </p>
+                </div>
+                <div className="aboslute right-0">
+                  {isCollapsed1 ? (
+                    <IoIosArrowDropdown size={30} />
+                  ) : (
+                    <IoIosArrowDropup size={30} />
+                  )}
+                </div>
+              </button>
+              {!isCollapsed1 && (
+                <div>
+                  {/* Content to be collapsed or expanded */}
+                  <p className="font-superLagend text-sm mt-10 ">
+                  SuperWeaves is a comprehensive Web3 ecosystem that integrates trading, betting, and social gaming. Our cross-chain functionality and community-centric approach provide a unique, all-in-one experience.
+                  </p>
+                </div>
               )}
-            </button>
-            {!isCollapsed1 && (
-              <div>
-                {/* Content to be collapsed or expanded */}
-                <p className="font-superLagend text-sm ">
-                  Keep in mind that all these collection will be available in
-                  the same mint (our one and only). Regardless, each collection
-                  are entitled to different perks (in the SteakStation , and the
-                  DreamWave ), there will also be perks to holding multiple
-                </p>
-              </div>
-            )}
+            </div>
+            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+              <button className="flex" onClick={handleToggleCollapse2}>
+                <div>
+                  <p className="font-superLagend text-left relative left-0 ">
+                  How does DWØPE ensure the security of transactions within SuperWeaves?
+                  </p>
+                </div>
+                <div className="aboslute right-0">
+                  {isCollapsed2 ? (
+                    <IoIosArrowDropdown size={30} />
+                  ) : (
+                    <IoIosArrowDropup size={30} />
+                  )}
+                </div>
+              </button>
+              {!isCollapsed2 && (
+                <div>
+                  {/* Content to be collapsed or expanded */}
+                  <p className="font-superLagend text-sm mt-10 ">
+                    Security is paramount at DWØPE. We employ advanced measures
+                    for asset and information protection, ensuring your trading,
+                    betting, and gaming activities are safe and secure.
+                  </p>
+                </div>
+              )}
+            </div>
+            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+              <button className="flex" onClick={handleToggleCollapse3}>
+                <div>
+                  <p className="font-superLagend text-left relative left-0 ">
+                  Can I manage multiple blockchain wallets with SuperWeaves?
+                  </p>
+                </div>
+                <div className="aboslute right-0">
+                  {isCollapsed3 ? (
+                    <IoIosArrowDropdown size={30} />
+                  ) : (
+                    <IoIosArrowDropup size={30} />
+                  )}
+                </div>
+              </button>
+              {!isCollapsed3 && (
+                <div>
+                  {/* Content to be collapsed or expanded */}
+                  <p className="font-superLagend text-sm mt-10 ">
+                  Absolutely. DWØPE supports interoperable wallets, allowing you to connect and manage your assets across different blockchains effortlessly, all within our app.
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
-          <div className="bg-[#0000007e] relative rounded-xl w-[800px] p-6 flex flex-col gap-4 justify-end">
-            <button
-              className="flex justify-end"
-              onClick={handleToggleCollapse2}
-            >
-              <p className="font-superLagend absolute left-6">
-                What's the mint price ?
-              </p>
-              {isCollapsed2 ? (
-                <IoIosArrowDropdown size={30} />
-              ) : (
-                <IoIosArrowDropup size={30} />
+          <div className="flex flex-col gap-6">
+          <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+              <button className="flex" onClick={handleToggleCollapse4}>
+                <div>
+                  <p className="font-superLagend text-left relative left-0 ">
+                    What betting opportunities does SuperWeaves offer?
+                  </p>
+                </div>
+                <div className="aboslute right-0">
+                  {isCollapsed4 ? (
+                    <IoIosArrowDropdown size={30} />
+                  ) : (
+                    <IoIosArrowDropup size={30} />
+                  )}
+                </div>
+              </button>
+              {!isCollapsed4 && (
+                <div>
+                  {/* Content to be collapsed or expanded */}
+                  <p className="font-superLagend text-sm mt-10 ">
+                  SuperWeaves offers a dynamic betting landscape with varied pools driven by real-time events in the Web3 space. Bet on outcomes across a range of activities, with the chance to earn substantial rewards.
+                  </p>
+                </div>
               )}
-            </button>
-            {!isCollapsed2 && (
-              <div>
-                {/* Content to be collapsed or expanded */}
-                <p className="font-superLagend text-sm ">
-                  Keep in mind that all these collection will be available in
-                  the same mint (our one and only). Regardless, each collection
-                  are entitled to different perks (in the SteakStation , and the
-                  DreamWave ), there will also be perks to holding multiple
-                </p>
-              </div>
-            )}
-          </div>
-          <div className="bg-[#0000007e] relative rounded-xl w-[800px] p-6 flex flex-col gap-4 justify-end">
-            <button
-              onClick={handleToggleCollapse3}
-              className="flex justify-end"
-            >
-              <p className="font-superLagend absolute left-6">W E N ?</p>
-              {isCollapsed3 ? (
-                <IoIosArrowDropdown size={30} />
-              ) : (
-                <IoIosArrowDropup size={30} />
+            </div>
+
+            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+              <button className="flex" onClick={handleToggleCollapse5}>
+                <div>
+                  <p className="font-superLagend text-left relative left-0 ">
+                  How does DWØPE ensure fair play and transparency in betting and gaming?
+                  </p>
+                </div>
+                <div className="aboslute right-0">
+                  {isCollapsed5 ? (
+                    <IoIosArrowDropdown size={30} />
+                  ) : (
+                    <IoIosArrowDropup size={30} />
+                  )}
+                </div>
+              </button>
+              {!isCollapsed5 && (
+                <div>
+                  {/* Content to be collapsed or expanded */}
+                  <p className="font-superLagend text-sm mt-10 ">
+                  DWØPE is committed to fair play and transparency across all aspects of our platform. By leveraging blockchain technology, every bet, trading card game outcome, and transaction is recorded on a decentralized ledger, ensuring immutable proof of all activities. This not only guarantees fairness but also provides our users with complete visibility and trust in the integrity of our betting and gaming environments.
+                  </p>
+                </div>
               )}
-            </button>
-            {!isCollapsed3 && (
-              <div>
-                {/* Content to be collapsed or expanded */}
-                <p className="font-superLagend text-sm ">
-                  Keep in mind that all these collection will be available in
-                  the same mint (our one and only). Regardless, each collection
-                  are entitled to different perks (in the SteakStation , and the
-                  DreamWave ), there will also be perks to holding multiple
-                </p>
-              </div>
-            )}
-          </div>
-          <div className="bg-[#0000007e] relative rounded-xl w-[800px] p-6 flex flex-col justify-end">
-            <button
-              onClick={handleToggleCollapse4}
-              className="flex justify-end"
-            >
-              <p className="font-superLagend absolute left-6">
-                What's this DreamWave game all about ?
-              </p>
-              {isCollapsed4 ? (
-                <IoIosArrowDropdown size={30} />
-              ) : (
-                <IoIosArrowDropup size={30} />
+            </div>
+
+            <div className="bg-[#0000007e] py-[1.3rem] relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+              <button className="flex" onClick={handleToggleCollapse6}>
+                <div>
+                  <p className="font-superLagend text-left relative left-0 ">
+                  What makes DWØPE's DWOOBz NFT collection unique in the digital marketplace?
+                  </p>
+                </div>
+                <div className="aboslute right-0">
+                  {isCollapsed6 ? (
+                    <IoIosArrowDropdown size={30} />
+                  ) : (
+                    <IoIosArrowDropup size={30} />
+                  )}
+                </div>
+              </button>
+              {!isCollapsed6 && (
+                <div>
+                  {/* Content to be collapsed or expanded */}
+                  <p className="font-superLagend text-sm mt-10 ">
+                  DWØPE's NFTs stand out in the digital marketplace for their intrinsic utility and integration within our ecosystem. From granting access to exclusive content and areas within the metaverse to offering enhancements in our gaming and betting modules, our NFTs are designed to enrich the user experience, making them a valuable asset for both collectors and active platform participants. 
+                  </p>
+                </div>
               )}
-            </button>
-            {!isCollapsed4 && (
-              <div>
-                {/* Content to be collapsed or expanded */}
-                <p className="font-superLagend text-sm ">
-                  Keep in mind that all these collection will be available in
-                  the same mint (our one and only). Regardless, each collection
-                  are entitled to different perks (in the SteakStation , and the
-                  DreamWave ), there will also be perks to holding multiple
-                </p>
-              </div>
-            )}
-          </div>
-          <div className="bg-[#0000007e] relative rounded-xl w-[800px] p-4 flex flex-col justify-end">
-            <button
-              onClick={handleToggleCollapse5}
-              className="flex justify-end"
-            >
-              <p className="font-superLagend absolute left-6">
-                Is there a Whitelist ?
-              </p>
-              {isCollapsed5 ? (
-                <IoIosArrowDropdown size={30} />
-              ) : (
-                <IoIosArrowDropup size={30} />
-              )}
-            </button>
-            {!isCollapsed5 && (
-              <div>
-                {/* Content to be collapsed or expanded */}
-                <p className="font-superLagend text-sm ">
-                  Keep in mind that all these collection will be available in
-                  the same mint (our one and only). Regardless, each collection
-                  are entitled to different perks (in the SteakStation , and the
-                  DreamWave ), there will also be perks to holding multiple
-                </p>
-              </div>
-            )}
+            </div>
           </div>
         </div>
       </div>
