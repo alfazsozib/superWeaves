@@ -10,7 +10,8 @@ function Hero() {
             <img className="banner opacity-70" src={MainBanner} alt="" />
         </div>
         <div className="logo">
-            <img className="h-20 relative left-6 top-6" src={logo} alt="" />
+          <a href="https://dwope.works/DWOOBz" target="_blank"><img className="h-20 relative left-6 top-6" src={logo} alt="logo" /></a>
+            
         </div>
         <div className="text_box w-[100%] flex flex-col items-center gap-4">
           <h1 className="font-twister text-[40px] font-bold title ">superWeaves</h1>

@@ -1,12 +1,9 @@
-import React,{ useRef } from "react";
-import card from "../components/images/Card1.png";
+import React from "react";
 import purpleBg from "../components/bg/pinkBlue.png";
 import blueBg from "../components/bg/bluebg.png";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { cardData } from "./data/Models"; 
 import bcp10 from "../components/players/bcp10.glb"
-import { Model } from "./Model";
 import { useGLTF } from "@react-three/drei";
 
 function Meta() {

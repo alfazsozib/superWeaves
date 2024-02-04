@@ -3,14 +3,12 @@ import bgShadow from "../components/images/shadow2.png";
 import pinkBg from "../components/bg/Ellipse 4.png";
 import ellips from "../components/bg/Ellipse 30.png";
 import pinkBG from "../components/bg/pinkbg.png";
-import blueBG from "../components/bg/bluebg.png"
-import pinkBlue from "../components/bg/pinkBlue.png"
+import pinkBlue from "../components/bg/pinkBlue.png";
 import polygon from "../components/bg/Polygon 3.png";
 import bgShadow2 from "../components/images/shadow1.png";
 import bgShadow3 from "../components/images/shadow3.png";
 import mid_banner from "../components/images/mid_banner.jpeg";
 import mid_banner2 from "../components/images/mid_banner2.jpeg";
-import card1 from "../components/cards/image38.png";
 import blankCard from "../components/images/Card.png";
 import { Cards } from "./data/Cards";
 import Footer from "./global/Footer";
@@ -18,8 +16,7 @@ import Faq from "./Faq";
 import { Model } from "./Model";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { cardData } from "./data/Models"; 
-
+import { cardData } from "./data/Models";
 
 function ThirdSection() {
   return (
@@ -52,15 +49,22 @@ function ThirdSection() {
               <img src={polygon} alt="" />
             </div>
             <div className="cards relative flex justify-around">
-                <div className="w-[100%] flex gap-2 p-2">
-                {cardData.map((id,index)=>
-                <Canvas style={{height:"320px", width:"200px"}} camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
-                  <ambientLight intensity={5} />
-                  <OrbitControls enableZoom={true} />
-                  <Model path={id.path}/>
-                </Canvas>
-                )}
-                </div>
+              <div className="w-[100%] flex gap-2 p-2">
+                {cardData.map((id, index) => (
+                  <Canvas
+                    style={{ height: "320px", width: "200px" }}
+                    camera={{
+                      fov: 64,
+                      getViewBounds: 50,
+                      position: [-2, 2, 0],
+                    }}
+                  >
+                    <ambientLight intensity={5} />
+                    <OrbitControls enableZoom={true} />
+                    <Model path={id.path} />
+                  </Canvas>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -218,7 +222,12 @@ function ThirdSection() {
                 <div className="text-area relative">
                   <p className="p-16 text-center font-quantico text-2xl leading-loose ">
                     <span>
-                        <img width={800} className="absolute z-[-10] bottom-10 right-[-50px] overflow-hidden" src={pinkBlue} alt="" />
+                      <img
+                        width={800}
+                        className="absolute z-[-10] bottom-10 right-[-50px] overflow-hidden"
+                        src={pinkBlue}
+                        alt=""
+                      />
                     </span>
                     Trade, auction, and leverage your NFTs in a player-driven
                     market that values rarity, utility, and the story behind
@@ -230,7 +239,7 @@ function ThirdSection() {
                   </p>
                 </div>
                 <Faq />
-                < Footer />
+                <Footer />
               </div>
             </div>
           </div>
