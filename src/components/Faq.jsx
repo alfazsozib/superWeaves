@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import { IoIosArrowDropdown, IoIosArrowDropup } from "react-icons/io";
+import yellowBG from "../components/bg/yellowbg.png";
+import fl1 from "../components/images/fl1.png";
+import fl2 from "../components/images/fl2.png";
+import fl3 from "../components/images/fl3.png";
+import fl4 from "../components/images/fl4.png";
 
 function Faq() {
   const [isCollapsed1, setIsCollapsed1] = useState(true);
@@ -25,14 +30,30 @@ function Faq() {
   };
 
   return (
-    <div className="faq-section">
-      <div className="flex flex-col justify-center items-center gap-14">
+    <div className="faq-section pb- relative">
+      <div className="absolute blur-md left-[-320px]">
+        <img width={200} src={fl1} alt="" />
+      </div>
+      <div className="absolute blur-md right-[-220px] overflow-hidden">
+        <img width={150} src={fl2} alt="" />
+      </div>
+      <div className="absolute blur-sm left-[-320px] bottom-[-80px] rotate-12 overflow-hidden">
+        <img width={200} src={fl3} alt="" />
+      </div>
+      <div className="absolute blur-md right-[-150px] bottom-[-150px] rotate-45 overflow-hidden">
+        <img width={150} src={fl4} alt="" />
+      </div>
+      <div className="flex flex-col justify-center relative items-center gap-14">
+        <div className="absolute left-[-600px]">
+          <img src={yellowBG} alt="" />
+        </div>
+
         <div>
           <h1 className="card-title font-superLagend text-4xl">
             Frequently Asked Questions
           </h1>
         </div>
-        <div className=" flex flex-col gap-8 text-[#e0dede]">
+        <div className=" flex flex-col gap-4 text-[#e0dede]">
           <div className="bg-[#0000007e] relative rounded-xl w-[800px] p-6 flex flex-col justify-end gap-4">
             <button
               onClick={handleToggleCollapse1}
@@ -60,14 +81,13 @@ function Faq() {
             )}
           </div>
           <div className="bg-[#0000007e] relative rounded-xl w-[800px] p-6 flex flex-col gap-4 justify-end">
-            
             <button
               className="flex justify-end"
               onClick={handleToggleCollapse2}
             >
-            <p className="font-superLagend absolute left-6">
-              What's the mint price ?
-            </p>
+              <p className="font-superLagend absolute left-6">
+                What's the mint price ?
+              </p>
               {isCollapsed2 ? (
                 <IoIosArrowDropdown size={30} />
               ) : (
