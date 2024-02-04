@@ -17,11 +17,15 @@ import { Model } from "./Model";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { cardData } from "./data/Models";
+import Hero from './Hero';
+import Meta from './Meta';
 
 function ThirdSection() {
   return (
     <>
       <div className="">
+      <Hero />   
+      <Meta />  
         <div className="p-32 mt-60 flex">
           <div className="">
             <h1 className="font-superLagend z-10 text-2 text-3xl">

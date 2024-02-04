@@ -11,18 +11,18 @@ function Footer() {
         <div className=''>
             <h1 className='font-twister text-5xl title_footer py-4'>DWOPE</h1>
         </div>
-        <div className='icons flex gap-4 pb-4'>
+        <div className='icons flex gap-4 pb-4 z-10'>
             <span><img width={50} src={discord} alt="discord" /></span>
             <span><img width={50} src={youtube} alt="youtube" /></span>
-            <span><img width={50} src={twitter} alt="twitter" /></span>
+            <a href="https://x.com/dwopes"><span><img width={50} src={twitter} alt="twitter" /></span></a>
         </div>
-        <div className='menu flex gap-6 font-mono'>
-            <span className=' font-semibold bg-gradient-to-r from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'>Contact</span>
-            <span className=' font-semibold bg-gradient-to-r from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'>Support </span>
-            <span className=' font-semibold bg-gradient-to-r from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'>Terms Of Policy</span>
-            <span className=' font-semibold bg-gradient-to-r from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'>Privacy Policy</span>
-        </div>
-        <div className='cpyright bg-gradient-to-r font-semibold from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'>
+        <div className='menu flex gap-10 font-mono z-10'>
+            {/* <span className=' font-semibold bg-gradient-to-r from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'>Contact</span> */}
+            {/* <span className=' font-semibold bg-gradient-to-r from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'>Support </span> */}
+            <span className=' font-semibold bg-gradient-to-r from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'><a href="https://dwope.works/terms">Terms Of Policy</a> </span>
+            <span className=' font-semibold bg-gradient-to-r from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'><a href="https://dwope.works/privacy">Privacy Policy</a> </span>
+        </div> 
+         <div className='cpyright bg-gradient-to-r font-semibold from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'>
             <span>Copyright © 2024 DWOPE. </span>
         </div>
         </div>
