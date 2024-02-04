@@ -6,10 +6,7 @@ import ThirdSection from './components/ThirdSection';
 function App() {
   return (
     <div className="App">
-      <Hero />   
-      <Meta />  
       <ThirdSection />
-      
     </div>
   );
 }
