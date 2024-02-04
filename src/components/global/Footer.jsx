@@ -6,7 +6,7 @@ import twitter from "../icons/Twitter.png"
 
 function Footer() {
   return (
-    <div className='footer-section w-[100%] h-32  flex justify-center'>
+    <div className='footer-section w-[100%] h-32  pt-56 flex justify-center'>
         <div className='footer flex flex-col justify-center items-center leading-loose'>
         <div className=''>
             <h1 className='font-twister text-5xl title_footer py-4'>DWOPE</h1>
