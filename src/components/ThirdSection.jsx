@@ -239,6 +239,7 @@ function ThirdSection() {
                   </p>
                 </div>
                 <Faq />
+                <div className="pt-24"></div>
                 <Footer />
               </div>
             </div>
