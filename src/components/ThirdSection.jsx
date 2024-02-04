@@ -15,8 +15,12 @@ import blankCard from "../components/images/Card.png";
 import { Cards } from "./data/Cards";
 import Footer from "./global/Footer";
 import Faq from "./Faq";
+import { Model } from "./Model";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 
 function ThirdSection() {
+  
   return (
     <>
       <div className="">
@@ -47,12 +51,30 @@ function ThirdSection() {
               <img src={polygon} alt="" />
             </div>
             <div className="cards relative flex justify-around p-16">
-              <img className="w-44" src={card1} alt="" />
-              <img className="w-44" src={card1} alt="" />
-              <img className="w-44" src={card1} alt="" />
-              <img className="w-44" src={card1} alt="" />
-              <img className="w-44" src={card1} alt="" />
-              <img className="w-44" src={card1} alt="" />
+  
+                <Canvas camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
+                  <ambientLight intensity={5} />
+                  <OrbitControls enableZoom={true} />
+                  <Model />
+                </Canvas>
+
+                <Canvas camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
+                  <ambientLight intensity={5} />
+                  <OrbitControls enableZoom={true} />
+                  <Model />
+                </Canvas>
+                <Canvas camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
+                  <ambientLight intensity={5} />
+                  <OrbitControls enableZoom={true} />
+                  <Model />
+                </Canvas>
+                <Canvas camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
+                  <ambientLight intensity={5} />
+                  <OrbitControls enableZoom={true} />
+                  <Model />
+                </Canvas>
+           
+              
             </div>
           </div>
         </div>
