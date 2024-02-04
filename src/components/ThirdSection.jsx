@@ -14,6 +14,7 @@ import card1 from "../components/cards/image38.png";
 import blankCard from "../components/images/Card.png";
 import { Cards } from "./data/Cards";
 import Footer from "./global/Footer";
+import Faq from "./Faq";
 
 function ThirdSection() {
   return (
@@ -220,6 +221,7 @@ function ThirdSection() {
                     the gateway to having the DWØPEst experience in SuperWeaves.
                   </p>
                 </div>
+                <Faq />
                 < Footer />
               </div>
             </div>
