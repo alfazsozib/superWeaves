@@ -13,11 +13,12 @@ import mid_banner2 from "../components/images/mid_banner2.jpeg";
 import card1 from "../components/cards/image38.png";
 import blankCard from "../components/images/Card.png";
 import { Cards } from "./data/Cards";
+import Footer from "./global/Footer";
 
 function ThirdSection() {
   return (
     <>
-      <div>
+      <div className="">
         <div className="p-32 mt-60 flex">
           <div className="">
             <h1 className="font-superLagend z-10 text-2 text-3xl">
@@ -219,6 +220,7 @@ function ThirdSection() {
                     the gateway to having the DWØPEst experience in SuperWeaves.
                   </p>
                 </div>
+                < Footer />
               </div>
             </div>
           </div>
