@@ -25,7 +25,7 @@ function ThirdSection() {
     <>
     <Hero /> 
     <Meta />
-      <div className="">
+      <div className="max-w-[1880px] mx-auto">
         
         
         <div className="p-32 mt-60 flex">
@@ -89,7 +89,7 @@ function ThirdSection() {
         </div>
       </div>
       <div className="trade-sec">
-        <div className="absolute left-[-100px] blur-sm">
+        <div className="absolute left-[-100px]">
           <img className="w-96" src={bgShadow2} alt="" />
         </div>
         <div className="absolute right-0">
@@ -150,14 +150,14 @@ function ThirdSection() {
                 <img width={200} src={blankCard} alt="" />
                 <img width={200} src={blankCard} alt="" />
                 <img width={200} src={blankCard} alt="" />
-                <div>
+                {/* <div>
                   <img
                     className="absolute z-[-10] left-[-100px] bottom-60 blur-sm"
                     width={300}
                     src={bgShadow2}
                     alt=""
                   />
-                </div>
+                </div> */}
               </div>
 
               <div className="text-are">

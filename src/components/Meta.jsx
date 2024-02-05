@@ -10,7 +10,7 @@ import card from "../components/images/Card1.png"
 function Meta() {
   const { nodes, materials } = useGLTF(bcp10);
   return (
-    <div className="first-section">
+    <div className="first-section max-w-[1880px] mx-auto">
       <div>
         <img
           className="w-[40rem] pinkBlueBg absolute right-[0] top-16"
