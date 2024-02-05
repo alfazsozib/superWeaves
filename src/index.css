@@ -50,6 +50,26 @@ body{
 
 }
 
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+.animate-title {
+    background: linear-gradient(126.02deg, #F03336 18.64%, rgba(236, 146, 101, 0.930805) 50.09%, #F6EC94 91.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 5px 3px 0px rgba(245, 245, 244, 0.873);
+    animation: gradientAnimation 5s linear infinite; /* Adjust the duration and timing function as needed */
+  }
+  
+
 .title_footer{
 
     background: linear-gradient(126.02deg, #F03336 18.64%, rgba(236, 146, 101, 0.930805) 50.09%, #F6EC94 91.79%);
@@ -92,14 +112,15 @@ body{
 
 .card-title{
 
-background: linear-gradient(150.74deg, #f80307eb 80.82%, #FE0BBA 100.8%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-margin-top: 2rem;
-text-shadow: 0px 10px 20px rgba(229, 9, 207, 0.873);
+    background: linear-gradient(150.74deg, #f80307eb 80.82%, #FE0BBA 100.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 2rem;
+    text-shadow: 0px 10px 20px rgba(229, 9, 207, 0.873);
 
 }
+
 .video-docker video {
     top: 50%;
     left: 50%;
