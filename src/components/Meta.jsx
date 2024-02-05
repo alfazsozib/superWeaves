@@ -5,11 +5,12 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import bcp10 from "../components/players/bcp10.glb"
 import { useGLTF } from "@react-three/drei";
+import card from "../components/images/Card1.png"
 
 function Meta() {
   const { nodes, materials } = useGLTF(bcp10);
   return (
-    <div className="first-section ">
+    <div className="first-section">
       <div>
         <img
           className="w-[40rem] pinkBlueBg absolute right-[0] top-16"
@@ -28,8 +29,8 @@ function Meta() {
         <div className="relative top-56">
           <div className="flex justify-around">
             <div className="card-side">
-              {/* <img className="relative z-10" src={card} alt="card sample" /> */}
-              <Canvas style={{height:"400px", width:"300px",position:"relative", zIndex:1}} camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
+              <img className="relative z-10" src={card} alt="card sample" />
+              {/* <Canvas style={{height:"400px", width:"300px",position:"relative", zIndex:1}} camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
                   <ambientLight intensity={5} />
                   <OrbitControls enableZoom={true} />
                   <group >
@@ -53,7 +54,7 @@ function Meta() {
                     </group>
                   </group>
       
-                </Canvas>
+                </Canvas> */}
 
               <div className="">
                 <img

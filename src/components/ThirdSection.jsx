@@ -23,9 +23,11 @@ import Meta from './Meta';
 function ThirdSection() {
   return (
     <>
+    <Hero /> 
+    <Meta />
       <div className="">
-      <Hero />   
-      <Meta />  
+        
+        
         <div className="p-32 mt-60 flex">
           <div className="">
             <h1 className="font-superLagend z-10 text-2 text-3xl">
@@ -41,7 +43,7 @@ function ThirdSection() {
           </div>
           <div>
             <img
-              className="w-[65rem] top-[-10rem] left-28 relative blur-sm"
+              className="w-[65rem] top-[-10rem] left-28 relative"
               src={bgShadow}
               alt=""
             />
@@ -53,20 +55,23 @@ function ThirdSection() {
               <img src={polygon} alt="" />
             </div>
             <div className="cards relative flex justify-around">
-              <div className="w-[100%] flex gap-2 p-2">
+              <div className="flex pl-12 gap-[60px]">
                 {cardData.map((id, index) => (
-                  <Canvas
-                    style={{ height: "320px", width: "200px" }}
-                    camera={{
-                      fov: 64,
-                      getViewBounds: 50,
-                      position: [-2, 2, 0],
-                    }}
-                  >
-                    <ambientLight intensity={5} />
-                    <OrbitControls enableZoom={true} />
-                    <Model path={id.path} />
-                  </Canvas>
+                  <div className="card">
+                      <img className="" src={id.image} alt="" />
+                  </div>
+                  // <Canvas
+                  //   style={{ height: "320px", width: "200px" }}
+                  //   camera={{
+                  //     fov: 64,
+                  //     getViewBounds: 50,
+                  //     position: [-2, 2, 0],
+                  //   }}
+                  // >
+                  //   <ambientLight intensity={5} />
+                  //   <OrbitControls enableZoom={true} />
+                  //   <Model path={id.path} />
+                  // </Canvas>
                 ))}
               </div>
             </div>

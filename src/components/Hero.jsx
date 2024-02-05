@@ -4,13 +4,13 @@ import logo from "../components/Video/public.gif"
 import BG1 from "../components/Video/Pearl_Texture_2.mp4"
 function Hero() {
   return (
-    <div className="">
-      <div>
-        <div className="banner-section video-dovker" >
-        <div className="video-docker fixed left-0 top-0 h-[400px] w-full overflow-hidden">
+    <div >
+      <div className="">
+        <div className="banner-section" >
+        <div className="video-docker -z-10 fixed left-0 top-0 h-[400px] w-full overflow-hidden">
         <video
           className="absolute min-h-full min-w-full object-cover"
-          src={BG1}
+          src={""}
           type="video/webm"
           autoPlay
           muted

@@ -5,6 +5,7 @@ import av4 from "../avatar/4.png"
 import av5 from "../avatar/5.png"
 import av6 from "../avatar/6.png"
 
+
 export const Cards = [
     {
         title:"DWAP",

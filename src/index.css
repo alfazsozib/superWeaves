@@ -58,7 +58,8 @@ body{
       background-position: 100% 50%;
     }
   }
-
+  
+  /* Apply the animation to your element */
 .animate-title {
     background: linear-gradient(126.02deg, #F03336 18.64%, rgba(236, 146, 101, 0.930805) 50.09%, #F6EC94 91.79%);
     -webkit-background-clip: text;
