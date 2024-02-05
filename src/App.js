@@ -1,5 +1,3 @@
-import Hero from './components/Hero';
-import Meta from './components/Meta';
 import ThirdSection from './components/ThirdSection';
 
 
