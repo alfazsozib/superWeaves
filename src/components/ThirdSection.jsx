@@ -4,12 +4,12 @@ import pinkBg from "../components/bg/Ellipse 4.png";
 import ellips from "../components/bg/Ellipse 30.png";
 import pinkBG from "../components/bg/pinkbg.png";
 import pinkBlue from "../components/bg/pinkBlue.png";
-import yellowBG from "../components/bg/yellowbg.png"
+import yellowBG from "../components/bg/yellowbg.png";
 import polygon from "../components/bg/Polygon 3.png";
 import bgShadow2 from "../components/images/shadow1.png";
 import bgShadow3 from "../components/images/shadow3.png";
 import mid_banner from "../components/images/mid_banner.jpeg";
-import banner from "../components/Video/Pearl_Texture_2.mp4"
+import banner from "../components/Video/Pearl_Texture_2.mp4";
 import mid_banner2 from "../components/images/mid_banner2.jpeg";
 import blankCard from "../components/images/Card.png";
 import { Cards } from "./data/Cards";
@@ -19,15 +19,16 @@ import { Model } from "./Model";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { cardData } from "./data/Models";
-import Hero from './Hero';
-import Meta from './Meta';
+
+import Meta from "./Meta";
+import Banner from "./Banner";
+import Hero from "../components/Hero";
 
 function ThirdSection() {
   return (
     <>
-      <div className="max-w-[1880px] mx-auto">
-        
-        
+      {/* <div clas></div> */}
+      <div className="max-w-[1880px]  mx-[240px] md:mx-[150px]">
         <div className="p-32 mt-60 flex">
           <div className="">
             <h1 className="font-superLagend z-10 text-2 text-3xl">
@@ -58,7 +59,7 @@ function ThirdSection() {
               <div className="flex pl-28 gap-[70px]">
                 {cardData.map((id, index) => (
                   <div className="card">
-                      <img className="" src={id.image} alt="" />
+                    <img className="" src={id.image} alt="" />
                   </div>
                   // <Canvas
                   //   style={{ height: "320px", width: "200px" }}
@@ -96,13 +97,23 @@ function ThirdSection() {
           <img width={800} src={pinkBG} alt="" />
         </div>
         <div className="relative w-[100%]  top-96">
-          <span className="text-2  text-4xl ml-24 font-superLagend flex">
+          <span className="text-2 mx-[240px] md:mx-[150px] text-4xl ml-24 font-superLagend flex">
             Strategize, Trade, Thrive
           </span>
-            
-          <div className="banner-second mt-12">
-          
-            <div className="text-area pt-10 p-16">
+
+          <div className="banner-second  mt-12">
+            <div className="-z-10 left-0 top-0 h-[400px] w-full overflow-hidden">
+              <video
+                className=" min-h-full min-w-full object-cover"
+                src={banner}
+                type="video/webm"
+                autoPlay
+                muted
+                loop
+              ></video>
+            </div>
+
+            <div className="text-area pt-10 p-16 mx-[240px] md:mx-[150px]">
               <p className="font-quantico text-2xl leading-loose">
                 Our tradebot is your trusted companion, navigating you through
                 the complexities of multiple blockchains with ease and agility.
@@ -123,16 +134,22 @@ function ThirdSection() {
               </p>
             </div>
             <div>
-              <img
-                className=" relative w-[100%] h-96 z-10 bg-no-repeat bg-cover bg-center"
-                src={mid_banner2}
-                alt=""
-              />
+            <div className="-z-10 left-0 top-0 h-[400px] w-full overflow-hidden">
+              <video
+                className=" min-h-full min-w-full object-cover"
+                src={banner}
+                type="video/webm"
+                autoPlay
+                muted
+                loop
+              ></video>
+            </div>
+
               <div>
                 <img className="absolute top-[40rem]" src={pinkBG} alt="" />
               </div>
             </div>
-            <div className="text-area">
+            <div className="text-area mx-[240px] md:mx-[150px]">
               <p className=" p-16 text-center z-10 font-semibold font-quantico text-2xl leading-loose">
                 At DWØPE, we elevate betting to an art form with our diverse
                 range of prediction pools. From the movements in the financial
