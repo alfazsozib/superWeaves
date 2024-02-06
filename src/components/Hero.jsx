@@ -4,7 +4,7 @@ import logo from "../components/Video/public.gif"
 import BG1 from "../components/Video/Pearl_Texture_2.mp4"
 function Hero() {
   return (
-    <div className="max-w-[1800px] mx-auto">
+    <div className="max-w-[1800px] mx-auto flex">
       <div className="">
         <div className="banner-section" >
           <div className="-z-10 absolute left-0 top-0 h-full w-full overflow-hidden">
@@ -23,10 +23,10 @@ function Hero() {
           <a href="https://dwope.works/DWOOBz" rel="noreferrer"><img className="h-20 relative left-6 top-6" src={logo} alt="logo" /></a>
             
         </div>
-        <div className="text_box relative w-[100%] flex flex-col items-center gap-4">
-          <h1 className="font-twister text-[40px] font-bold title animate-title ">superWeaves</h1>
-          <h1 className="font-superLagend text-4xl text tracking-widest">Trade, Bet & Game </h1>
-          <h1 className="font-twister text-4xl bg-gradient-to-r from-[#f32f32] via-[#f46b59] to-[#f0e68d] text-transparent bg-clip-text">In One Web3 MMO Super APP</h1>
+        <div className="text_box relative w-[100%] middle-text flex flex-col items-center gap-4">
+          <h1 className="font-twister text-[60px] font-bold title animate-title ">superWeaves</h1>
+          <h1 className="font-superLagend text-6xl text tracking-widest">Trade, Bet & Game </h1>
+          <h1 className="font-twister text-6xl bg-gradient-to-r from-[#f32f32] via-[#f46b59] to-[#f0e68d] text-transparent bg-clip-text">In One Web3 MMO Super APP</h1>
         </div>
       </div>
     </div>
