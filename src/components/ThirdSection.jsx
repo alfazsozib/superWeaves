@@ -28,7 +28,7 @@ function ThirdSection() {
   return (
     <>
       {/* <div clas></div> */}
-      <div className="max-w-[1880px]  mx-[240px] md:mx-[150px]">
+      <div className="max-w-[1880px]  mx-[300px] ">
         <div className="p-32 mt-60 flex">
           <div className="">
             <h1 className="font-superLagend z-10 text-2 text-3xl">
@@ -56,7 +56,7 @@ function ThirdSection() {
               <img className="mr-60" src={pinkBlue} alt="" />
             </div>
             <div className="cards relative flex justify-around">
-              <div className="flex pl-28 gap-[70px]">
+              <div className="flex pl-28 gap-[50px]">
                 {cardData.map((id, index) => (
                   <div className="card">
                     <img className="" src={id.image} alt="" />
@@ -90,14 +90,14 @@ function ThirdSection() {
         </div>
       </div>
       <div className="trade-sec">
-        <div className="absolute left-[100px]">
+        <div className="absolute left-[200px]">
           <img className="w-96" src={bgShadow2} alt="" />
         </div>
         <div className="absolute right-20">
           <img width={800} src={pinkBG} alt="" />
         </div>
         <div className="relative w-[100%]  top-96">
-          <span className="text-2 mx-[240px] md:mx-[150px] text-4xl ml-24 font-superLagend flex">
+          <span className="text-2 ml-[300px]  text-4xl  font-superLagend flex">
             Strategize, Trade, Thrive
           </span>
 
@@ -113,7 +113,7 @@ function ThirdSection() {
               ></video>
             </div>
 
-            <div className="text-area pt-10 p-16 mx-[240px] md:mx-[150px]">
+            <div className="text-area pt-10 p-16 mx-[300px] ">
               <p className="font-quantico text-2xl leading-loose">
                 Our tradebot is your trusted companion, navigating you through
                 the complexities of multiple blockchains with ease and agility.
@@ -149,7 +149,7 @@ function ThirdSection() {
                 <img className="absolute top-[40rem]" src={pinkBG} alt="" />
               </div>
             </div>
-            <div className="text-area mx-[240px] md:mx-[150px]">
+            <div className="text-area mx-[300px] ">
               <p className=" p-16 text-center z-10 font-semibold font-quantico text-2xl leading-loose">
                 At DWØPE, we elevate betting to an art form with our diverse
                 range of prediction pools. From the movements in the financial

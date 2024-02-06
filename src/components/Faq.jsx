@@ -33,7 +33,7 @@ function Faq() {
     setIsCollapsed6(!isCollapsed6);
   };
   return (
-    <div className="faq-section relative max-w-[1880px] mx-auto">
+    <div className="faq-section relative max-w-[1200px] mx-auto">
       <div className="absolute  left-[-250px]">
         <img width={200} src={fl1} alt="" />
       </div>
