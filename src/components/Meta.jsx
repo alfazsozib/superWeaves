@@ -25,7 +25,7 @@ function Meta() {
           alt="bg1"
         />
       </div>
-      <div className="p-16">
+      <div className="">
         <div className="relative top-56">
           <div className="flex justify-around">
             <div className="card-side">
@@ -58,7 +58,7 @@ function Meta() {
 
               <div className="">
                 <img
-                  className="absolute top-32 w-[55rem] left-[-400px]"
+                  className="absolute top-32 w-[55rem] left-[-80px]"
                   src={purpleBg}
                   alt=""
                 />
@@ -70,11 +70,11 @@ function Meta() {
             </div>
 
             <div className="text-side">
-              <h1 className="text-2 gap-4 font-superLagend flex flex-col items-center text-4xl">
+              <h1 className="text-2 gap-4 font-superLagend flex-col items-center text-4xl">
                 <span>The Metaverse's </span>
                 <span>Game-Changer</span>
               </h1>
-              <p className="w-[30rem] mt-6 leading-relaxed text-2xl font-quantico">
+              <p className="w-[50rem] mt-6 leading-relaxed text-2xl font-quantico">
                 Welcome to SuperWeaves, the first application built by DWØPE.
                 This super app will revolutionize the way you engage with Web3.
                 Our platform combines trading, betting, and social gaming in one

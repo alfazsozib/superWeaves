@@ -16,7 +16,6 @@ function Hero() {
                 muted
                 loop
               >
-
               </video>
       </div>
         </div>

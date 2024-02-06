@@ -4,6 +4,7 @@ import pinkBg from "../components/bg/Ellipse 4.png";
 import ellips from "../components/bg/Ellipse 30.png";
 import pinkBG from "../components/bg/pinkbg.png";
 import pinkBlue from "../components/bg/pinkBlue.png";
+import yellowBG from "../components/bg/yellowbg.png"
 import polygon from "../components/bg/Polygon 3.png";
 import bgShadow2 from "../components/images/shadow1.png";
 import bgShadow3 from "../components/images/shadow3.png";
@@ -51,11 +52,11 @@ function ThirdSection() {
         </div>
         <div className="card-line flex items-center">
           <div>
-            <div className="polygon absolute">
-              <img src={polygon} alt="" />
+            <div className="polygon absolute right-96">
+              <img className="mr-60" src={pinkBlue} alt="" />
             </div>
             <div className="cards relative flex justify-around">
-              <div className="flex pl-12 gap-[60px]">
+              <div className="flex pl-28 gap-[70px]">
                 {cardData.map((id, index) => (
                   <div className="card">
                       <img className="" src={id.image} alt="" />
@@ -79,8 +80,8 @@ function ThirdSection() {
         </div>
       </div>
 
-      <div className="absolute w-1/2 right-16 mt-12 ">
-        <div className="text-right">
+      <div className="absolute w-1/2 right-52 mt-12 ">
+        <div className="text-right mr-36">
           <p className="font-quantico text-xl leading-loose font-semibold">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to
             engage in secure, and truly decentralized transactions that affirm
@@ -89,14 +90,14 @@ function ThirdSection() {
         </div>
       </div>
       <div className="trade-sec">
-        <div className="absolute left-[-100px]">
+        <div className="absolute left-[100px]">
           <img className="w-96" src={bgShadow2} alt="" />
         </div>
-        <div className="absolute right-0">
-          <img width={800} src={pinkBg} alt="" />
+        <div className="absolute right-20">
+          <img width={800} src={pinkBG} alt="" />
         </div>
         <div className="relative w-[100%]  top-96">
-          <span className="text-2  text-4xl ml-16 font-superLagend flex">
+          <span className="text-2  text-4xl ml-24 font-superLagend flex">
             Strategize, Trade, Thrive
           </span>
 
@@ -164,9 +165,9 @@ function ThirdSection() {
                 <p className="p-16 z-10 relative font-quantico text-2xl leading-loose">
                   <div>
                     <img
-                      width={450}
-                      className="absolute left-0 bottom-[-60px]"
-                      src={ellips}
+                      width={800}
+                      className="absolute left-[-200px] bottom-[-200px]"
+                      src={yellowBG}
                       alt=""
                     />
                   </div>

@@ -34,7 +34,7 @@ function Faq() {
   };
   return (
     <div className="faq-section relative max-w-[1880px] mx-auto">
-      <div className="absolute  left-[-320px]">
+      <div className="absolute  left-[-250px]">
         <img width={200} src={fl1} alt="" />
       </div>
       <div className="absolute  right-[-70px] overflow-hidden">
