@@ -25,7 +25,7 @@ function Hero() {
         <div className="logo relative">
           <a href="https://dwope.works/DWOOBz" rel="noreferrer">
             <img className="h-20 relative left-6 top-6" src={logo} alt="logo" />
-            <div className="flex flex-col mt-60 gap-4 items-center">
+            <div className="flex flex-col mt-60 gap-4 items-center ml-[100px]">
                       <h1 className="font-twister text-[60px] font-bold title animate-title ">
                     superWeaves
                     </h1>
