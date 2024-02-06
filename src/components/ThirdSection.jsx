@@ -25,8 +25,6 @@ import Meta from './Meta';
 function ThirdSection() {
   return (
     <>
-    <Hero /> 
-    <Meta />
       <div className="max-w-[1880px] mx-auto">
         
         
@@ -101,13 +99,9 @@ function ThirdSection() {
           <span className="text-2  text-4xl ml-24 font-superLagend flex">
             Strategize, Trade, Thrive
           </span>
-
+            
           <div className="banner-second mt-12">
-            <img
-              className="h-96 w-full bg-no-repeat bg-cover bg-center"
-              src={mid_banner}
-              alt=""
-            />
+          
             <div className="text-area pt-10 p-16">
               <p className="font-quantico text-2xl leading-loose">
                 Our tradebot is your trusted companion, navigating you through

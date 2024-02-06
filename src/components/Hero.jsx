@@ -7,7 +7,7 @@ function Hero() {
     <div className="max-w-[1800px] mx-auto">
       <div className="">
         <div className="banner-section" >
-          <div className="-z-10 absolute left-0 top-0 h-[400px] w-full overflow-hidden">
+          <div className="-z-10 absolute left-0 top-0 h-full w-full overflow-hidden">
               <video
                 className="absolute min-h-full min-w-full object-cover"
                 src={BG1}
