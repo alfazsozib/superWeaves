@@ -9,6 +9,7 @@ import polygon from "../components/bg/Polygon 3.png";
 import bgShadow2 from "../components/images/shadow1.png";
 import bgShadow3 from "../components/images/shadow3.png";
 import mid_banner from "../components/images/mid_banner.jpeg";
+import banner from "../components/Video/Pearl_Texture_2.mp4"
 import mid_banner2 from "../components/images/mid_banner2.jpeg";
 import blankCard from "../components/images/Card.png";
 import { Cards } from "./data/Cards";
@@ -103,7 +104,7 @@ function ThirdSection() {
 
           <div className="banner-second mt-12">
             <img
-              className="w-[100%] h-96 bg-no-repeat bg-cover bg-center"
+              className="h-96 w-full bg-no-repeat bg-cover bg-center"
               src={mid_banner}
               alt=""
             />
