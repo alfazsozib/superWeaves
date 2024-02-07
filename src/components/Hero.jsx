@@ -7,7 +7,7 @@ import BG1 from "../components/Video/Pearl_Texture_2.mp4";
 
 function Hero() {
   return (
-    <div className="max-w-[1200px] mx-auto flex w-full h-full overflow-hidden">
+    <div className="max-w-[1200px] mx-auto flex w-full h-[100vh] overflow-hidden">
       <div className="">
         <div className="banner-section">
           <div className="-z-10 absolute left-0 top-0 h-full w-full overflow-hidden">
@@ -22,7 +22,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="logo relative">
+        <div className="logo relative z-[10]">
           <a href="https://dwope.works/DWOOBz" rel="noreferrer">
             <img className="h-20 relative left-6 top-6" src={logo} alt="logo" />
             <div className="flex flex-col mt-60 gap-4 items-center ml-[100px]">

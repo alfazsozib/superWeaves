@@ -44,7 +44,7 @@ function ThirdSection() {
           </div>
           <div>
             <img
-              className="w-[65rem] top-[-10rem] left-28 relative"
+              className="w-[65rem] top-[-10rem] left-[4rem] relative"
               src={bgShadow}
               alt=""
             />
@@ -80,28 +80,31 @@ function ThirdSection() {
         </div>
       </div>
 
-      <div className="absolute w-1/2 right-52 mt-12 ">
-        <div className="text-right mr-36">
-          <p className="font-quantico text-xl leading-loose font-semibold">
+      
+      <div className="trade-sec relative">
+      <div className="flex justify-center  max-w-[1200px] mx-auto">
+        <div className="text-right absolute top-16 flex">
+        <div className="">
+          <img className="w-96" src={bgShadow2} alt="" />
+        </div>
+          <p className="font-quantico w-[800px] text-xl leading-loose font-semibold">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to
             engage in secure, and truly decentralized transactions that affirm
             your true ownership of digital assets.
           </p>
         </div>
+        
       </div>
-      <div className="trade-sec">
-        <div className="absolute left-[200px]">
-          <img className="w-96" src={bgShadow2} alt="" />
-        </div>
+       
         <div className="absolute right-20">
           <img width={800} src={pinkBG} alt="" />
         </div>
-        <div className="relative w-[100%]  top-96">
+        <div className="relative w-[100%]  top-[500px]">
           <span className="text-2 md:ml-[500px]  text-4xl  font-superLagend flex">
             Strategize, Trade, Thrive
           </span>
 
-          <div className="banner-second  mt-12">
+          <div className="banner-second  mt-8">
             {/* <div className="-z-10 left-0 top-0 h-[400px] w-full overflow-hidden">
               <video
                 className=" min-h-full min-w-full object-cover"
@@ -113,7 +116,7 @@ function ThirdSection() {
               ></video>
             </div> */}
 
-            <div className="text-area pt-10 p-16 mx-[300px] ">
+            <div className="text-area pt-6 p-16 max-w-[1200px] mx-auto ">
               <p className="font-quantico text-2xl leading-loose">
                 Our tradebot is your trusted companion, navigating you through
                 the complexities of multiple blockchains with ease and agility.
@@ -149,7 +152,7 @@ function ThirdSection() {
                 <img className="absolute top-[40rem]" src={pinkBG} alt="" />
               </div>
             </div>
-            <div className="text-area mx-[300px] ">
+            <div className="text-area max-w-[1200px] mx-auto ">
               <p className=" p-16 text-center z-10 font-semibold font-quantico text-2xl leading-loose">
                 At DWØPE, we elevate betting to an art form with our diverse
                 range of prediction pools. From the movements in the financial
@@ -217,12 +220,12 @@ function ThirdSection() {
                 {Cards.map((item, index) => (
                   <div
                     key={item.id}
-                    className="av-cards rounded-2xl w-[350px] bg-[#2e2c2c5e] bg"
+                    className="av-cards rounded-2xl w-[300px] bg-[#2e2c2c5e] bg"
                   >
                     <div className="overflow-hidden">
                       <img
                         className=" object-cover scale-100 hover:scale-125 ease-in duration-500 rounded-2xl bg-no-repeat bg-center"
-                        width={400}
+                        width={300}
                         src={item.image}
                         alt="av"
                       />

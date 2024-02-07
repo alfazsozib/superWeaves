@@ -43,7 +43,7 @@ function Faq() {
       <div className="absolute  left-0 bottom-[-80px] rotate-12 overflow-hidden">
         <img width={200} src={fl3} alt="" />
       </div>
-      <div className="absolute  right-0 bottom-[-150px] rotate-45 overflow-hidden">
+      <div className="absolute  right-2 bottom-[-150px] rotate-45 overflow-hidden">
         <img width={150} src={fl4} alt="" />
       </div>
       <div className="flex flex-col justify-center relative items-center gap-14">

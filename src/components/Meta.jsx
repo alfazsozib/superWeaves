@@ -13,7 +13,7 @@ function Meta() {
     <div className="first-section max-w-[1880px] mx-auto ">
       <div>
         <img
-          className="w-[40rem] pinkBlueBg  right-[0] top-16"
+          className="w-[40rem] absolute pinkBlueBg  right-[0] top-16"
           src={blueBg}
           alt="bg1"
         />
