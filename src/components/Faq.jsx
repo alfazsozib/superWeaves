@@ -34,16 +34,16 @@ function Faq() {
   };
   return (
     <div className="faq-section relative max-w-[1200px] mx-auto">
-      <div className="absolute  left-[-250px]">
+      <div className="absolute  left-0">
         <img width={200} src={fl1} alt="" />
       </div>
       <div className="absolute  right-[-70px] overflow-hidden">
         <img width={150} src={fl2} alt="" />
       </div>
-      <div className="absolute  left-[-200px] bottom-[-80px] rotate-12 overflow-hidden">
+      <div className="absolute  left-0 bottom-[-80px] rotate-12 overflow-hidden">
         <img width={200} src={fl3} alt="" />
       </div>
-      <div className="absolute  right-[-5px] bottom-[-150px] rotate-45 overflow-hidden">
+      <div className="absolute  right-0 bottom-[-150px] rotate-45 overflow-hidden">
         <img width={150} src={fl4} alt="" />
       </div>
       <div className="flex flex-col justify-center relative items-center gap-14">

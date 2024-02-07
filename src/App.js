@@ -7,7 +7,7 @@ import ThirdSection from './components/ThirdSection';
 function App() {
   return (
     <>
-    <div className="App max-w-[1880px] mx-[300px]">
+    <div className="App max-w-[1200px] mx-auto bg-red-300">
       <Hero/>
       <Meta/>
     </div>

@@ -28,8 +28,8 @@ function ThirdSection() {
   return (
     <>
       {/* <div clas></div> */}
-      <div className="max-w-[1880px]  mx-[300px] ">
-        <div className="p-32 mt-60 flex">
+      <div className="max-w-[1200px]  mx-auto">
+        <div className="p-12 mt-60 flex">
           <div className="">
             <h1 className="font-superLagend z-10 text-2 text-3xl">
               Play, Connect, Conquer
@@ -97,7 +97,7 @@ function ThirdSection() {
           <img width={800} src={pinkBG} alt="" />
         </div>
         <div className="relative w-[100%]  top-96">
-          <span className="text-2 ml-[300px]  text-4xl  font-superLagend flex">
+          <span className="text-2 md:ml-[500px]  text-4xl  font-superLagend flex">
             Strategize, Trade, Thrive
           </span>
 
@@ -213,16 +213,16 @@ function ThirdSection() {
                 </p>
               </div>
 
-              <div className="avatar-box flex flex-wrap justify-center gap-10 p-16">
+              <div className="avatar-box flex flex-wrap justify-between gap-10 p-16">
                 {Cards.map((item, index) => (
                   <div
                     key={item.id}
-                    className="av-cards rounded-2xl w-[300px] bg-[#2e2c2c5e] bg"
+                    className="av-cards rounded-2xl w-[350px] bg-[#2e2c2c5e] bg"
                   >
-                    <div>
+                    <div className="overflow-hidden">
                       <img
-                        className="bg-cover rounded-2xl bg-no-repeat bg-center"
-                        width={300}
+                        className=" object-cover scale-100 hover:scale-125 ease-in duration-500 rounded-2xl bg-no-repeat bg-center"
+                        width={400}
                         src={item.image}
                         alt="av"
                       />
