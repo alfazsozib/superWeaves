@@ -102,7 +102,7 @@ function ThirdSection() {
           </span>
 
           <div className="banner-second  mt-12">
-            <div className="-z-10 left-0 top-0 h-[400px] w-full overflow-hidden">
+            {/* <div className="-z-10 left-0 top-0 h-[400px] w-full overflow-hidden">
               <video
                 className=" min-h-full min-w-full object-cover"
                 src={banner}
@@ -111,7 +111,7 @@ function ThirdSection() {
                 muted
                 loop
               ></video>
-            </div>
+            </div> */}
 
             <div className="text-area pt-10 p-16 mx-[300px] ">
               <p className="font-quantico text-2xl leading-loose">
