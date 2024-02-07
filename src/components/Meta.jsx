@@ -27,9 +27,9 @@ function Meta() {
       </div>
       <div className="">
         <div className="relative top-56">
-          <div className="flex justify-around">
+          <div className="flex justify-around max-sm:flex max-sm:flex-col max-sm:justify-normal max-sm:gap-24 max-sm:p-4">
             <div className="card-side">
-              <img className="relative z-10" src={card} alt="card sample" />
+              <img className="relative z-10 mx-auto" src={card} alt="card sample" />
               {/* <Canvas style={{height:"400px", width:"300px",position:"relative", zIndex:1}} camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
                   <ambientLight intensity={5} />
                   <OrbitControls enableZoom={true} />
@@ -63,18 +63,18 @@ function Meta() {
                   alt=""
                 />
               </div>
-              <h1 className="font-superLagend  card-title text-2xl ">
+              <h1 className="font-superLagend max-sm:text-center card-title text-2xl ">
                 Cheetah Baby
               </h1>
               
             </div>
 
             <div className="text-side">
-              <h1 className="text-2 gap-4 font-superLagend flex-col items-center text-4xl">
+              <h1 className="text-2 max-sm:p-4 gap-4 font-superLagend flex-col items-center text-4xl max-sm:text-xl">
                 <span>The Metaverse's </span>
                 <span>Game-Changer</span>
               </h1>
-              <p className="w-[50rem] mt-6 leading-relaxed text-2xl font-quantico">
+              <p className="w-[50rem] max-sm:w-full mt-6 max-sm:text-xl max-sm:p-4 leading-relaxed text-2xl font-quantico">
                 Welcome to SuperWeaves, the first application built by DWØPE.
                 This super app will revolutionize the way you engage with Web3.
                 Our platform combines trading, betting, and social gaming in one
