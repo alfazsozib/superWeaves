@@ -21,32 +21,33 @@ function Hero() {
             ></video>
           </div>
         </div>
-
+        {/*  */}
         <div className="logo relative z-[10]">
           <a href="https://dwope.works/DWOOBz" rel="noreferrer">
             <img className="h-20 relative left-6 top-6" src={logo} alt="logo" />
-            <div className="flex flex-col mt-60 gap-4 items-center ml-[100px] max-sm:ml-0">
+          </a>  
+            <div className="flex flex-col mt-60 gap-4 items-center ml-[100px] max-sm:ml-0 max-sm:w-full max-sm:items-center">
             
             
-            <div className="min-w-[412px] mx-auto max-sm:mx-0 md:mx-0 relative flex text-center items-center justify-center font-twist text-5xl tracking-tighter ">
+            <div className="min-w-[300px] mx-auto max-sm:mx-0 md:mx-0 relative flex text-center items-center justify-center font-twist text-5xl tracking-tighter ">
             <div>
-              <h1 className="linear-wipe font-twister max-sm:text-4xl text-5xl text-transparent  md:text-6xl">
+              <p className="linear-wipe font-twister max-sm:text-4xl max-sm:text-center text-5xl text-transparent  md:text-6xl">
                 SupperWaves
-              </h1>
+              </p>
             </div>
-            <div className="absolute bottom-1 left-1 max-sm:left-10 max-sm:text-4xl md:text-6xl">
+            <div className="absolute bottom-1 left-1 max-sm:left-1 max-sm:text-4xl md:text-6xl">
               <h1 className="font-twister text-[#E4E4E4]">SupperWaves</h1>
             </div>
           </div>
 
-              <h1 className="font-superLagend text-[3.2rem] max-sm:text-2xl text tracking-widest">
+              <h1 className="font-superLagend text-[3.2rem] max-sm:text-3xl max-sm:text-center text tracking-[0.1em]">
                 Trade, Bet & Game{" "}
               </h1>
-              <h1 className="font-twister text-[3.2rem] max-sm:text-[1.2rem] linear-sub text-transparent bg-clip-text">
+              <h1 className="font-twister text-[3.2rem] max-sm:text-[1.2rem] linear-sub text-transparent max-sm:hidden bg-clip-text">
                 In One Web3 MMO Super APP
               </h1>
             </div>
-          </a>
+          
 
           <div className="text_box w-[100%] bg-red-300 middle-text flex flex-col items-center gap-4"></div>
         </div>
