@@ -34,16 +34,16 @@ function Faq() {
   };
   return (
     <div className="faq-section relative max-w-[1200px] mx-auto">
-      <div className="absolute  left-0">
+      <div className="absolute max-sm:hidden  left-0">
         <img width={200} src={fl1} alt="" />
       </div>
-      <div className="absolute  right-[-70px] overflow-hidden">
+      <div className="absolute max-sm:hidden  right-[-70px] overflow-hidden">
         <img width={150} src={fl2} alt="" />
       </div>
-      <div className="absolute  left-0 bottom-[-80px] rotate-12 overflow-hidden">
+      <div className="absolute max-sm:hidden  left-0 bottom-[-80px] rotate-12 overflow-hidden">
         <img width={200} src={fl3} alt="" />
       </div>
-      <div className="absolute  right-2 bottom-[-150px] rotate-45 overflow-hidden">
+      <div className="absolute max-sm:hidden  right-2 bottom-[-150px] rotate-45 overflow-hidden">
         <img width={150} src={fl4} alt="" />
       </div>
       <div className="flex flex-col justify-center relative items-center gap-14">
@@ -52,13 +52,13 @@ function Faq() {
         </div>
 
         <div>
-          <h1 className="card-title font-superLagend text-4xl">
+          <h1 className="card-title font-superLagend max-sm:text-2xl text-4xl">
             Frequently Asked Questions
           </h1>
         </div>
-        <div className="flex gap-24 text-[#e0dede]">
+        <div className="flex max-sm:flex max-sm:flex-col gap-24 max-sm:gap-10 text-[#e0dede]">
           <div className="flex flex-col gap-6">
-            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] max-sm:w-[350px] p-4 max-sm:mx-auto flex flex-col gap-4 justify-end">
               <button className="flex" onClick={handleToggleCollapse1}>
                 <div>
                   <p className="font-superLagend text-left relative left-0 ">
@@ -82,7 +82,7 @@ function Faq() {
                 </div>
               )}
             </div>
-            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] max-sm:w-[350px] max-sm:mx-auto p-4 flex flex-col gap-4 justify-end">
               <button className="flex" onClick={handleToggleCollapse2}>
                 <div>
                   <p className="font-superLagend text-left relative left-0 ">
@@ -108,7 +108,7 @@ function Faq() {
                 </div>
               )}
             </div>
-            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] max-sm:w-[350px] p-4 max-sm:mx-auto flex flex-col gap-4 justify-end">
               <button className="flex" onClick={handleToggleCollapse3}>
                 <div>
                   <p className="font-superLagend text-left relative left-0 ">
@@ -134,7 +134,7 @@ function Faq() {
             </div>
           </div>
           <div className="flex flex-col gap-6">
-          <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+          <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] max-sm:w-[350px] p-4 max-sm:mx-auto flex flex-col gap-4 justify-end">
               <button className="flex" onClick={handleToggleCollapse4}>
                 <div>
                   <p className="font-superLagend text-left relative left-0 ">
@@ -159,7 +159,7 @@ function Faq() {
               )}
             </div>
 
-            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] max-sm:w-[350px] p-4 max-sm:mx-auto flex flex-col gap-4 justify-end">
               <button className="flex" onClick={handleToggleCollapse5}>
                 <div>
                   <p className="font-superLagend text-left relative left-0 ">
@@ -184,7 +184,7 @@ function Faq() {
               )}
             </div>
 
-            <div className="bg-[#0000007e] py-[1.3rem] relative rounded-xl w-[500px] p-4 flex flex-col gap-4 justify-end">
+            <div className="bg-[#0000007e] py-[1.3rem] relative rounded-xl w-[500px] max-sm:w-[350px] p-4 max-sm:mx-auto flex flex-col gap-4 justify-end">
               <button className="flex" onClick={handleToggleCollapse6}>
                 <div>
                   <p className="font-superLagend text-left relative left-0 ">

@@ -34,7 +34,7 @@ function ThirdSection() {
             <h1 className="font-superLagend z-10 text-2 text-3xl max-sm:text-2xl">
               Play, Connect, Conquer
             </h1>
-            <p className="text-2xl max-sm:text-xl max-sm:w-full text-justify  mt-8 font-quantico leading-loose">
+            <p className="text-2xl max-sm:text-xl max-sm:w-full lg:text-justify  mt-8 max-sm:mt-16 font-quantico max-sm:leading-loose leading-loose">
               The gaming experience in SuperWeaves is a place where players can
               trade, sell, or purchase NFT assets directly without
               intermediaries. Customize your decks with a mix of RNG and
@@ -100,7 +100,7 @@ function ThirdSection() {
         <div className="absolute right-20">
           <img width={800} src={pinkBG} alt="" />
         </div>
-        <div className="relative w-[100%]  top-[500px]">
+        <div className="relative w-[100%]  top-[500px] max-sm:top-[300px]">
           <span className="text-2 md:ml-[500px] max-sm:text-2xl max-sm:p-4 text-4xl  font-superLagend flex">
             Strategize, Trade, Thrive
           </span>
