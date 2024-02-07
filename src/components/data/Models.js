@@ -5,7 +5,6 @@
 // import bcp5 from "../players/bcp5.glb"
 // import bcp6 from "../players/bcp6.glb"
 
-import av6 from "../cards/image113 2.png"
 import av3 from "../cards/image113.png"
 import av5 from "../cards/image24.png"
 import av2 from "../cards/image25.png"
@@ -40,10 +39,6 @@ export const cardData = [
             id:499,
             image: av5
         },
-        {
-
-            id:16,
-            image: av6
-        },
+        
 
 ]

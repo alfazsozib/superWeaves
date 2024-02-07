@@ -113,8 +113,11 @@ body{
 .text-2{
     background: linear-gradient(90.02deg, #F03336 30.64%, #EC9265 40.09%, #F6EC94 100.79%); 
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate;
     text-shadow: 0px 10px 20px rgba(154, 127, 30, 0.873);
 
 }
@@ -129,11 +132,13 @@ body{
 
 .card-title{
 
-    background: linear-gradient(150.74deg, #f80307eb 80.82%, #FE0BBA 100.8%);
+    background: linear-gradient(150.74deg, #f80307eb 80.82%, #df03a1 100.8%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-top: 2rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 3s ease-in-out infinite alternate;
     text-shadow: 0px 10px 20px rgba(229, 9, 207, 0.873);
 
 }

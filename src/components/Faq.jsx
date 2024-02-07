@@ -52,7 +52,7 @@ function Faq() {
         </div>
 
         <div>
-          <h1 className="card-title font-superLagend max-sm:text-2xl text-4xl">
+          <h1 className="card-title font-superLagend max-sm:text-2xl text-4xl max-sm:p-2">
             Frequently Asked Questions
           </h1>
         </div>

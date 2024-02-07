@@ -32,11 +32,11 @@ function Hero() {
             <div className="min-w-[300px] mx-auto max-sm:mx-0 md:mx-0 relative flex text-center items-center justify-center font-twist text-5xl tracking-tighter ">
             <div>
               <p className="linear-wipe font-twister max-sm:text-4xl max-sm:text-center text-5xl text-transparent  md:text-6xl">
-                SupperWaves
+              superWeaves
               </p>
             </div>
             <div className="absolute bottom-1 left-1 max-sm:left-1 max-sm:text-4xl md:text-6xl">
-              <h1 className="font-twister text-[#E4E4E4]">SupperWaves</h1>
+              <h1 className="font-twister text-[#E4E4E4]">superWeaves</h1>
             </div>
           </div>
 

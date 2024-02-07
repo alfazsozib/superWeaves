@@ -55,7 +55,7 @@ function ThirdSection() {
             <div className="polygon absolute right-96">
               <img className="mr-60" src={pinkBlue} alt="" />
             </div>
-            <div className="cards relative flex justify-around">
+            <div className="cards relative flex justify-around max-sm:bottom-[200px]">
               <div className="lg:flex md:flex pl-28 max-sm:p-4 max-sm:
               grid max-sm:grid-cols-2 gap-[50px]">
                 {cardData.map((id, index) => (
@@ -84,9 +84,9 @@ function ThirdSection() {
       
       <div className="trade-sec relative">
       <div className="lg:flex md:flex justify-center  max-w-[1200px] mx-auto">
-        <div className="text-right absolute max-sm:relative top-16 flex">
+        <div className="text-right absolute max-sm:relative top-16 max-sm:top-[-140px] flex">
         <div className="">
-          <img className="w-96 max-sm:w-56 max-sm:absolute max-sm:top-44 max-sm:left-36 max-sm:opacity-50 max-sm:-z-[10]" src={bgShadow2} alt="" />
+          <img className="w-96 max-sm:w-56 max-sm:absolute max-sm:top-[20rem] max-sm:left-36 max-sm:opacity-50 max-sm:-z-[10]" src={bgShadow2} alt="" />
         </div>
           <p className="font-quantico max-sm:text-left max-sm:p-4 w-[800px] max-sm:w-full max-sm:font-normal text-xl leading-loose font-semibold">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to
@@ -98,9 +98,9 @@ function ThirdSection() {
       </div>
        
         <div className="absolute right-20">
-          <img width={800} src={pinkBG} alt="" />
+          <img width={900} src={pinkBG} alt="" />
         </div>
-        <div className="relative w-[100%]  top-[500px] max-sm:top-[300px]">
+        <div className="relative w-[100%]  top-[500px] max-sm:top-[20px]">
           <span className="text-2 md:ml-[500px] max-sm:text-2xl max-sm:p-4 text-4xl  font-superLagend flex">
             Strategize, Trade, Thrive
           </span>
@@ -150,11 +150,11 @@ function ThirdSection() {
             </div>
 
               <div>
-                <img className="absolute top-[40rem]" src={pinkBG} alt="" />
+                <img className="absolute top-[40rem] max-sm:top-[50rem] -z-[10]" src={pinkBG} alt="" />
               </div>
             </div>
             <div className="text-area max-w-[1200px] mx-auto ">
-              <p className=" p-16 max-sm:p-4  text-center z-10 font-semibold max-sm:font-normal font-quantico text-2xl max-sm:text-xl max-sm:text-left leading-loose">
+              <p className=" p-16 max-sm:p-4  text-center z-10 font-semibold max-sm:font-normal font-quantico text-2xl max-sm:text-xl max-sm:text-left leading-loose max-sm:leading-loose">
                 At DWØPE, we elevate betting to an art form with our diverse
                 range of prediction pools. From the movements in the financial
                 markets to the outcomes of world events, your bets are placed on
@@ -166,15 +166,7 @@ function ThirdSection() {
                 <img width={200} src={blankCard} alt="" />
                 <img width={200} src={blankCard} alt="" />
                 <img width={200} src={blankCard} alt="" />
-                <img width={200} src={blankCard} alt="" />
-                {/* <div>
-                  <img
-                    className="absolute z-[-10] left-[-100px] bottom-60 blur-sm"
-                    width={300}
-                    src={bgShadow2}
-                    alt=""
-                  />
-                </div> */}
+
               </div>
 
               <div className="text-are">
@@ -217,11 +209,11 @@ function ThirdSection() {
                 </p>
               </div>
 
-              <div className="avatar-box flex flex-wrap justify-between max-sm:justify-center gap-10 p-16 max-sm:p-4">
+              <div className="avatar-box flex flex-wrap justify-between max-sm:justify-center gap-10 max-sm:gap-4 p-16 max-sm:p-2">
                 {Cards.map((item, index) => (
                   <div
                     key={item.id}
-                    className="av-cards rounded-2xl w-[300px] bg-[#2e2c2c5e] bg"
+                    className="av-cards rounded-2xl w-[300px] max-sm:w-[160px] bg-[#2e2c2c5e] bg"
                   >
                     <div className="overflow-hidden">
                       <img
@@ -231,12 +223,12 @@ function ThirdSection() {
                         alt="av"
                       />
                     </div>
-                    <div className="data-sec px-4 py-2">
-                      <div className="flex justify-between ">
-                        <span className="font-superLagend text-lg">
+                    <div className="data-sec px-4 py-2 max-sm:py-1">
+                      <div className="flex justify-between max-sm:gap-2">
+                        <span className="font-superLagend text-lg max-sm:text-sm">
                           {item.title}
                         </span>
-                        <span className="font-superLagend text-lg">
+                        <span className="font-superLagend text-lg max-sm:text-sm">
                           {item.id}
                         </span>
                       </div>
@@ -264,10 +256,14 @@ function ThirdSection() {
                     the gateway to having the DWØPEst experience in SuperWeaves.
                   </p>
                 </div>
+
+
                 <Faq />
                 <div className="pt-24"></div>
                 <Footer />
               </div>
+
+
             </div>
           </div>
         </div>

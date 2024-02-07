@@ -1,17 +1,9 @@
-import Banner from './components/Banner';
-import Hero from './components/Hero';
-import Meta from './components/Meta';
-import ThirdSection from './components/ThirdSection';
-
+import Home from "./components/Home";
 
 function App() {
   return (
     <>
-    <div className="App max-w-[1200px] mx-auto">
-      <Hero/>
-      <Meta/>
-    </div>
-    <ThirdSection />
+      <Home />
     </>
   );
 }
