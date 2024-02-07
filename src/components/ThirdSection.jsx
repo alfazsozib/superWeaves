@@ -98,7 +98,7 @@ function ThirdSection() {
       </div>
        
         <div className="absolute right-10">
-          <img className="max-sm:-z-[20]" width={900} src={pinkBG} alt="" />
+          <img className="max-sm:-z-[10] max-sm:opacity-80" width={900} src={pinkBG} alt="" />
         </div>
         <div className="relative w-[100%]  top-[500px] max-sm:top-[-80px]">
           <span className="text-2 md:ml-[500px] max-sm:text-2xl max-sm:p-4 text-4xl  font-superLagend flex">
