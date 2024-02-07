@@ -29,12 +29,12 @@ function ThirdSection() {
     <>
       {/* <div clas></div> */}
       <div className="max-w-[1200px]  mx-auto">
-        <div className="p-12 max-sm:p-8 mt-60 lg:flex">
+        <div className="p-12 max-sm:p-8 mt-28 lg:flex">
           <div className="">
             <h1 className="font-superLagend z-10 text-2 text-3xl max-sm:text-2xl">
               Play, Connect, Conquer
             </h1>
-            <p className="text-2xl max-sm:text-xl max-sm:w-full lg:text-justify  mt-8 max-sm:mt-16 font-quantico max-sm:leading-loose leading-loose">
+            <p className="text-2xl max-sm:text-xl max-sm:w-full lg:text-justify  mt-8 max-sm:mt-8 font-quantico max-sm:leading-loose leading-loose">
               The gaming experience in SuperWeaves is a place where players can
               trade, sell, or purchase NFT assets directly without
               intermediaries. Customize your decks with a mix of RNG and
@@ -86,9 +86,9 @@ function ThirdSection() {
       <div className="lg:flex md:flex justify-center  max-w-[1200px] mx-auto">
         <div className="text-right absolute max-sm:relative top-16 max-sm:top-[-140px] flex">
         <div className="">
-          <img className="w-96 max-sm:w-56 max-sm:absolute max-sm:top-[20rem] max-sm:left-36 max-sm:opacity-50 max-sm:-z-[10]" src={bgShadow2} alt="" />
+          <img className="w-96 max-sm:w-56 max-sm:absolute max-sm:top-[24rem] max-sm:left-32  max-sm:-z-[10]" src={bgShadow2} alt="" />
         </div>
-          <p className="font-quantico max-sm:text-left max-sm:p-4 w-[800px] max-sm:w-full max-sm:font-normal text-xl leading-loose font-semibold">
+          <p className="font-quantico max-sm:text-left max-sm:p-4 w-[800px] max-sm:w-full max-sm:font-normal text-xl max-sm:-z-[10] leading-loose font-semibold">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to
             engage in secure, and truly decentralized transactions that affirm
             your true ownership of digital assets.
@@ -97,10 +97,10 @@ function ThirdSection() {
         
       </div>
        
-        <div className="absolute right-20">
-          <img width={900} src={pinkBG} alt="" />
+        <div className="absolute right-10">
+          <img className="max-sm:-z-[20]" width={900} src={pinkBG} alt="" />
         </div>
-        <div className="relative w-[100%]  top-[500px] max-sm:top-[20px]">
+        <div className="relative w-[100%]  top-[500px] max-sm:top-[-80px]">
           <span className="text-2 md:ml-[500px] max-sm:text-2xl max-sm:p-4 text-4xl  font-superLagend flex">
             Strategize, Trade, Thrive
           </span>
@@ -118,7 +118,7 @@ function ThirdSection() {
             </div> */}
 
             <div className="text-area pt-6 p-16 max-sm:p-4  max-w-[1200px] mx-auto ">
-              <p className="font-quantico text-2xl max-sm:text-xl max-sm:leading-relaxed leading-loose">
+              <p className="font-quantico text-2xl max-sm:text-xl leading-loose max-sm:leading-loose">
                 Our tradebot is your trusted companion, navigating you through
                 the complexities of multiple blockchains with ease and agility.
                 Adapt and thrive with DWØPE's customizable trading strategies,
