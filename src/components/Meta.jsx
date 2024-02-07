@@ -63,9 +63,9 @@ function Meta() {
                   alt=""
                 />
               </div>
-              <h1 className="font-superLagend max-sm:text-center card-title text-2xl ">
+              {/* <h1 className="font-superLagend max-sm:text-center card-title text-2xl ">
                 Cheetah Baby
-              </h1>
+              </h1> */}
               
             </div>
 
