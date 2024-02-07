@@ -16,6 +16,9 @@ body{
     background-color: #E1E1E1;
 }
 
+.fix1{
+  
+}
 
 .banner{
     width: 100%;
@@ -132,14 +135,14 @@ body{
 
 .card-title{
 
-    background: linear-gradient(150.74deg, #f80307eb 80.82%, #df03a1 100.8%);
+    background: linear-gradient(to right, #ed030bf5, #e421ad);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
     animation: textShine 3s ease-in-out infinite alternate;
-    text-shadow: 0px 10px 20px rgba(229, 9, 207, 0.873);
+    text-shadow: 0px 10px 20px rgba(215, 36, 4, 0.963);
 
 }
 

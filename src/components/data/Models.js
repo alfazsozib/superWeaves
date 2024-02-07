@@ -25,7 +25,17 @@ export const cardData = [
 //     { position: [-2, 0, 0], path: bcp4 },
 //     { position: [-2, 0, 0], path: bcp5 },
 //     { position: [-2, 0, 0], path: bcp6 },
-        {
+{
+    id:242,
+    image: av4
+},
+
+{
+
+    id:49,
+    image: av6
+},        
+{
             id:404,
             image: av1
         },
@@ -42,16 +52,7 @@ export const cardData = [
             id:499,
             image: av5
         },
-        {
-            id:242,
-            image: av4
-        },
         
-        {
-
-            id:49,
-            image: av6
-        },
         
 
 ]

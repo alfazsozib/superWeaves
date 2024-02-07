@@ -20,16 +20,16 @@ function Meta() {
       </div>
       <div>
         <img
-          className="w-[60rem] pinkBlueBg absolute right-0"
+          className="w-[60rem] max-sm:-z-10 pinkBlueBg absolute right-0"
           src={purpleBg}
           alt="bg1"
         />
       </div>
       <div className="">
-        <div className="relative top-24">
+        <div className="relative top-24 max-sm:top-[-50px]">
           <div className="flex justify-around max-sm:flex max-sm:flex-col max-sm:justify-normal max-sm:gap-24 max-sm:p-4">
             <div className="card-side">
-              <img className="relative z-10 mx-auto" src={card} alt="card sample" />
+              {/* <img className="relative z-10 mx-auto" src={card} alt="card sample" /> */}
               {/* <Canvas style={{height:"400px", width:"300px",position:"relative", zIndex:1}} camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
                   <ambientLight intensity={5} />
                   <OrbitControls enableZoom={true} />
@@ -58,7 +58,7 @@ function Meta() {
 
               <div className="">
                 <img
-                  className="absolute top-60 w-[55rem] left-[-70px]"
+                  className="absolute top-60 max-sm:top-[26rem] w-[55rem] left-[-70px] max-sm:-z-10"
                   src={purpleBg}
                   alt=""
                 />
@@ -74,7 +74,7 @@ function Meta() {
                 <span>The Metaverse's </span>
                 <span>Game-Changer</span>
               </h1>
-              <p className="w-[50rem] max-sm:w-full mt-6 max-sm:mt-4 max-sm:text-xl max-sm:p-4 leading-relaxed max-sm:leading-loose text-2xl font-quantico">
+              <p className="w-[50rem] max-sm:w-full mt-6 max-sm:mt-4 max-sm:text-xl max-sm:p-4 leading-relaxed max-sm:leading-relaxed text-2xl font-quantico">
                 Welcome to SuperWeaves, the first application built by DWØPE.
                 This super app will revolutionize the way you engage with Web3.
                 Our platform combines trading, betting, and social gaming in one
