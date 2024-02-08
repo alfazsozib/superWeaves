@@ -34,7 +34,7 @@ function ThirdSection() {
             <h1 className="font-superLagend z-10 text-2 text-3xl max-sm:text-2xl">
               Play, Connect, Conquer
             </h1>
-            <p className="text-lg max-sm:text-xl max-sm:w-full lg:text-justify  mt-8 max-sm:mt-8 font-superLagend max-sm:leading-relaxed leading-loose">
+            <p className="text-lg text-[#333333] max-sm:text-xl max-sm:w-full lg:text-justify  mt-8 max-sm:mt-8 font-superLagend max-sm:leading-relaxed leading-loose">
               The gaming experience in SuperWeaves is a place where players can
               trade, sell, or purchase NFT assets directly without
               intermediaries. Customize your decks with a mix of RNG and
@@ -44,7 +44,7 @@ function ThirdSection() {
           </div>
           <div>
             <img
-              className="w-[85rem] opacity-30 max-sm:-z-[10] max-sm:opacity-40 top-[-15rem] left-[-10rem] relative"
+              className="w-[85rem] opacity-30 max-sm:-z-[10] max-sm:opacity-40 top-[-8rem] right-[12rem] relative"
               src={bgShadow}
               alt=""
             />
@@ -87,9 +87,9 @@ function ThirdSection() {
       <div className="lg:flex md:flex justify-center  max-w-[1200px] mx-auto">
         <div className="text-right absolute max-sm:relative top-16 max-sm:top-[-140px] flex">
         <div className="">
-          <img className="w-96 opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[20rem] max-sm:left-36" src={bgShadow2} alt="" />
+          <img className="w-96 opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[20rem] max-sm:left-60" src={bgShadow2} alt="" />
         </div>
-          <p className="font-superLagend lg:mt-28 max-sm:text-left max-sm:p-4 w-[800px] max-sm:z-30 max-sm:w-full max-sm:font-normal max-sm:leading-relaxed text-lg leading-loose font-semibold">
+          <p className="font-superLagend text-[#333333] lg:mt-28 max-sm:text-left max-sm:p-4 w-[800px] max-sm:z-30 max-sm:w-full max-sm:font-normal max-sm:leading-relaxed text-lg leading-loose font-semibold">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to
             engage in secure, and truly decentralized transactions that affirm
             your true ownership of digital assets.
@@ -118,7 +118,7 @@ function ThirdSection() {
               ></video>
             </div> */}
 
-            <div className="text-area pt-6 p-16 max-sm:p-4  max-w-[1200px] mx-auto ">
+            <div className="text-area pt-6  text-[#333333] p-16 max-sm:p-4  max-w-[1200px] mx-auto ">
               <p className="font-superLagend text-lg max-sm:text-xl leading-loose max-sm:leading-relaxed">
                 Our tradebot is your trusted companion, navigating you through
                 the complexities of multiple blockchains with ease and agility.
@@ -129,7 +129,7 @@ function ThirdSection() {
               <br />
               <br />
 
-              <p className="font-superLagend text-lg max-sm:text-xl max-sm:leading-relaxed leading-loose">
+              <p className="font-superLagend text-[#333333] text-lg max-sm:text-xl max-sm:leading-relaxed leading-loose">
                 Connect wallets from any network and manage your digital assets
                 with the unified precision that only our platform can provide.
                 Your assets are guarded, your identity is secure, and your
@@ -155,7 +155,7 @@ function ThirdSection() {
               </div>
             </div>
             <div className="text-area max-w-[1200px] mx-auto ">
-              <p className=" p-16 max-sm:p-4 text-center z-10 font-semibold max-sm:font-normal font-superLagend text-lg max-sm:text-xl max-sm:text-left leading-loose max-sm:leading-relaxed">
+              <p className=" p-16 max-sm:p-4 text-[#333333] text-center z-10 font-semibold max-sm:font-normal font-superLagend text-lg max-sm:text-xl max-sm:text-left leading-loose max-sm:leading-relaxed">
                 At DWØPE, we elevate betting to an art form with our diverse
                 range of prediction pools. From the movements in the financial
                 markets to the outcomes of world events, your bets are placed on
@@ -171,7 +171,7 @@ function ThirdSection() {
               </div>
 
               <div className="text-are">
-                <p className="p-16 max-sm:p-4 z-10 max-sm:-z-[10] relative font-superLagend text-lg max-sm:text-xl max-sm:leading-relaxed leading-loose">
+                <p className="p-16 text-[#333333] max-sm:p-4 z-10 max-sm:-z-[10] relative font-superLagend text-lg max-sm:text-xl max-sm:leading-relaxed leading-loose">
                   <div>
                     {/* <img
                       width={800}
@@ -183,7 +183,7 @@ function ThirdSection() {
                   <div className="">
                     <img
                       width={200}
-                      className="absolute opacity-30 right-[0]  z-[-10] max-sm:z-[-1] bottom-[-120px]"
+                      className="absolute opacity-30 right-[15rem]  z-[-10] max-sm:z-[-1] bottom-[-120px]"
                       src={bgShadow3}
                       alt=""
                     />
@@ -201,7 +201,7 @@ function ThirdSection() {
                 <p className="font-superLagend text-center max-sm:text-left text-2 text-4xl max-sm:text-2xl max-sm:p-4">
                   The DWØPE NFT Experience
                 </p>
-                <p className="p-16 max-sm:p-4 font-superLagend text-lg max-sm:text-xl max-sm:leading-relaxed leading-loose">
+                <p className="p-16 text-[#333333] max-sm:p-4 font-superLagend text-lg max-sm:text-xl max-sm:leading-relaxed leading-loose">
                   Embrace the diversity of DWØPE's NFT collection, from the
                   whimsical charm of WEEPLE characters to the majestic might of
                   DWAGONs. Each NFT serves as your digital alter ego, an avatar

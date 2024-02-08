@@ -76,7 +76,7 @@ function Meta() {
                 <span>The Metaverse's </span>
                 <span>Game-Changer</span>
               </h1>
-              <p className="w-[40rem] max-sm:w-full mt-6 max-sm:mt-4 max-sm:text-xl max-sm:p-4 leading-loose max-sm:leading-relaxed text-lg font-superLagend">
+              <p className="w-[40rem] text-[#333333] font-light max-sm:w-full mt-6 max-sm:mt-4 max-sm:text-xl max-sm:p-4 leading-loose max-sm:leading-relaxed text-lg font-superLagend">
                 Welcome to SuperWeaves, the first application built by DWØPE.
                 This super app will revolutionize the way you engage with Web3.
                 Our platform combines trading, betting, and social gaming in one
