@@ -5,6 +5,7 @@ import fl1 from "../components/images/fl1.png";
 import fl2 from "../components/images/fl2.png";
 import fl3 from "../components/images/fl3.png";
 import fl4 from "../components/images/fl4.png";
+import { Transition } from "@headlessui/react";
 
 function Faq() {
   const [isCollapsed1, setIsCollapsed1] = useState(true);
@@ -13,7 +14,12 @@ function Faq() {
   const [isCollapsed4, setIsCollapsed4] = useState(true);
   const [isCollapsed5, setIsCollapsed5] = useState(true);
   const [isCollapsed6, setIsCollapsed6] = useState(true);
+  const [activeIndex, setActiveIndex] = useState(null);
 
+
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
   const handleToggleCollapse1 = () => {
     setIsCollapsed1(!isCollapsed1);
   };
@@ -32,6 +38,42 @@ function Faq() {
   const handleToggleCollapse6 = () => {
     setIsCollapsed6(!isCollapsed6);
   };
+
+  const faqs = [
+    {
+      question: "What makes SuperWeaves different from other Metaverse platforms?",
+      answer:
+        "SuperWeaves is a comprehensive Web3 ecosystem that integrates trading, betting, and social gaming. Our cross-chain functionality and community-centric approach provide a unique, all-in-one experience.",
+    },
+    {
+      question: "How does DWØPE ensure the security of transactions within SuperWeaves?",
+      answer: "Security is paramount at DWØPE. We employ advanced measures for asset and information protection, ensuring your trading, betting, and gaming activities are safe and secure.",
+    },
+    {
+      question: "Can I manage multiple blockchain wallets with SuperWeaves?",
+      answer:
+        "Absolutely. DWØPE supports interoperable wallets, allowing you to connect and manage your assets across different blockchains effortlessly, all within our app.",
+    },
+    {
+      question: "What betting opportunities does SuperWeaves offer?",
+      answer:
+        "SuperWeaves offers a dynamic betting landscape with varied pools driven by real-time events in the Web3 space. Bet on outcomes across a range of activities, with the chance to earn substantial rewards.",
+    },
+    {
+      question: "How does DWØPE ensure fair play and transparency in betting and gaming?",
+      answer:
+        "DWØPE is committed to fair play and transparency across all aspects of our platform. By leveraging blockchain technology, every bet, trading card game outcome, and transaction is recorded on a decentralized ledger, ensuring immutable proof of all activities. This not only guarantees fairness but also provides our users with complete visibility and trust in the integrity of our betting and gaming environments.",
+    },
+    {
+      question: "What makes DWØPE's DWOOBz NFT collection unique in the digital marketplace?",
+      answer:
+        "DWØPE's NFTs stand out in the digital marketplace for their intrinsic utility and integration within our ecosystem. From granting access to exclusive content and areas within the metaverse to offering enhancements in our gaming and betting modules, our NFTs are designed to enrich the user experience, making them a valuable asset for both collectors and active platform participants. ",
+    },
+    //
+    // Add more FAQ items as needed
+  ];
+
+
   return (
     <div className="faq-section relative max-w-[1200px] mx-auto">
       <div className="absolute max-sm:hidden  left-0">
@@ -58,158 +100,60 @@ function Faq() {
         </div>
         <div className="flex max-sm:flex max-sm:flex-col gap-24 max-sm:gap-10 text-[#e0dede]">
           <div className="flex flex-col gap-6">
-            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] max-sm:w-[350px] p-4 max-sm:mx-auto flex flex-col gap-4 justify-end">
-              <button className="flex" onClick={handleToggleCollapse1}>
-                <div>
-                  <p className="font-superLagend text-left relative left-0 ">
-                  What makes SuperWeaves different from other Metaverse platforms?
+          <div className="mt-20 max-sm:mt-4 w-full grid grid-cols-2 max-sm:flex max-sm:flex-col gap-10">
+          {faqs.map((faq, index) => (
+            <div key={index} className="flex-col">
+              <div
+                className="flex w-full cursor-pointer items-center justify-between rounded-2xl bg-black/30 p-3 backdrop-blur-sm"
+                onClick={() => toggleAccordion(index)}
+              >
+                <h3 className="font-superLagend text-left relative left-0">{faq.question}</h3>
+                <svg
+                  className={`h-5 w-5 transform  text-[#ececec] transition-transform duration-300 ${
+                    activeIndex === index ? "rotate-0" : "-rotate-180"
+                  }`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
+              <Transition
+                show={activeIndex === index}
+                enter="transition duration-100 ease-out"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="transition duration-75 ease-out"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                {(ref) => (
+                  <p
+                    ref={ref}
+                    className="font-superLagend text-sm mt-2  rounded-2xl bg-black/30 p-3  text-[#ecebeb] backdrop-blur-sm"
+                  >
+                    {faq.answer}
                   </p>
-                </div>
-                <div className="aboslute right-0">
-                  {isCollapsed1 ? (
-                    <IoIosArrowDropdown size={30} />
-                  ) : (
-                    <IoIosArrowDropup size={30} />
-                  )}
-                </div>
-              </button>
-              {!isCollapsed1 && (
-                <div>
-                  {/* Content to be collapsed or expanded */}
-                  <p className="font-superLagend text-sm mt-10 ">
-                  SuperWeaves is a comprehensive Web3 ecosystem that integrates trading, betting, and social gaming. Our cross-chain functionality and community-centric approach provide a unique, all-in-one experience.
-                  </p>
-                </div>
-              )}
+                )}
+              </Transition>
             </div>
-            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] max-sm:w-[350px] max-sm:mx-auto p-4 flex flex-col gap-4 justify-end">
-              <button className="flex" onClick={handleToggleCollapse2}>
-                <div>
-                  <p className="font-superLagend text-left relative left-0 ">
-                  How does DWØPE ensure the security of transactions within SuperWeaves?
-                  </p>
-                </div>
-                <div className="aboslute right-0">
-                  {isCollapsed2 ? (
-                    <IoIosArrowDropdown size={30} />
-                  ) : (
-                    <IoIosArrowDropup size={30} />
-                  )}
-                </div>
-              </button>
-              {!isCollapsed2 && (
-                <div>
-                  {/* Content to be collapsed or expanded */}
-                  <p className="font-superLagend text-sm mt-10 ">
-                    Security is paramount at DWØPE. We employ advanced measures
-                    for asset and information protection, ensuring your trading,
-                    betting, and gaming activities are safe and secure.
-                  </p>
-                </div>
-              )}
-            </div>
-            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] max-sm:w-[350px] p-4 max-sm:mx-auto flex flex-col gap-4 justify-end">
-              <button className="flex" onClick={handleToggleCollapse3}>
-                <div>
-                  <p className="font-superLagend text-left relative left-0 ">
-                  Can I manage multiple blockchain wallets with SuperWeaves?
-                  </p>
-                </div>
-                <div className="aboslute right-0">
-                  {isCollapsed3 ? (
-                    <IoIosArrowDropdown size={30} />
-                  ) : (
-                    <IoIosArrowDropup size={30} />
-                  )}
-                </div>
-              </button>
-              {!isCollapsed3 && (
-                <div>
-                  {/* Content to be collapsed or expanded */}
-                  <p className="font-superLagend text-sm mt-10 ">
-                  Absolutely. DWØPE supports interoperable wallets, allowing you to connect and manage your assets across different blockchains effortlessly, all within our app.
-                  </p>
-                </div>
-              )}
-            </div>
-          </div>
-          <div className="flex flex-col gap-6">
-          <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] max-sm:w-[350px] p-4 max-sm:mx-auto flex flex-col gap-4 justify-end">
-              <button className="flex" onClick={handleToggleCollapse4}>
-                <div>
-                  <p className="font-superLagend text-left relative left-0 ">
-                    What betting opportunities does SuperWeaves offer?
-                  </p>
-                </div>
-                <div className="aboslute right-0">
-                  {isCollapsed4 ? (
-                    <IoIosArrowDropdown size={30} />
-                  ) : (
-                    <IoIosArrowDropup size={30} />
-                  )}
-                </div>
-              </button>
-              {!isCollapsed4 && (
-                <div>
-                  {/* Content to be collapsed or expanded */}
-                  <p className="font-superLagend text-sm mt-10 ">
-                  SuperWeaves offers a dynamic betting landscape with varied pools driven by real-time events in the Web3 space. Bet on outcomes across a range of activities, with the chance to earn substantial rewards.
-                  </p>
-                </div>
-              )}
-            </div>
-
-            <div className="bg-[#0000007e] py-8 relative rounded-xl w-[500px] max-sm:w-[350px] p-4 max-sm:mx-auto flex flex-col gap-4 justify-end">
-              <button className="flex" onClick={handleToggleCollapse5}>
-                <div>
-                  <p className="font-superLagend text-left relative left-0 ">
-                  How does DWØPE ensure fair play and transparency in betting and gaming?
-                  </p>
-                </div>
-                <div className="aboslute right-0">
-                  {isCollapsed5 ? (
-                    <IoIosArrowDropdown size={30} />
-                  ) : (
-                    <IoIosArrowDropup size={30} />
-                  )}
-                </div>
-              </button>
-              {!isCollapsed5 && (
-                <div>
-                  {/* Content to be collapsed or expanded */}
-                  <p className="font-superLagend text-sm mt-10 ">
-                  DWØPE is committed to fair play and transparency across all aspects of our platform. By leveraging blockchain technology, every bet, trading card game outcome, and transaction is recorded on a decentralized ledger, ensuring immutable proof of all activities. This not only guarantees fairness but also provides our users with complete visibility and trust in the integrity of our betting and gaming environments.
-                  </p>
-                </div>
-              )}
-            </div>
-
-            <div className="bg-[#0000007e] py-[1.3rem] relative rounded-xl w-[500px] max-sm:w-[350px] p-4 max-sm:mx-auto flex flex-col gap-4 justify-end">
-              <button className="flex" onClick={handleToggleCollapse6}>
-                <div>
-                  <p className="font-superLagend text-left relative left-0 ">
-                  What makes DWØPE's DWOOBz NFT collection unique in the digital marketplace?
-                  </p>
-                </div>
-                <div className="aboslute right-0">
-                  {isCollapsed6 ? (
-                    <IoIosArrowDropdown size={30} />
-                  ) : (
-                    <IoIosArrowDropup size={30} />
-                  )}
-                </div>
-              </button>
-              {!isCollapsed6 && (
-                <div>
-                  {/* Content to be collapsed or expanded */}
-                  <p className="font-superLagend text-sm mt-10 ">
-                  DWØPE's NFTs stand out in the digital marketplace for their intrinsic utility and integration within our ecosystem. From granting access to exclusive content and areas within the metaverse to offering enhancements in our gaming and betting modules, our NFTs are designed to enrich the user experience, making them a valuable asset for both collectors and active platform participants. 
-                  </p>
-                </div>
-              )}
-            </div>
+          ))}
+        </div>
+            
           </div>
         </div>
+
+
+
+
+
+        
       </div>
     </div>
   );

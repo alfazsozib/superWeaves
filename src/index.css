@@ -181,3 +181,19 @@ body{
     left: 0;
   }
   
+
+  /* Faq.css */
+/* Faq.css */
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Add transition for smooth height animation */
+}
+
+.rotate-icon {
+  transition: transform 0.5s ease; /* Slow down the rotation animation */
+}
+
+.expanded .collapsible-content {
+  max-height: 500px; /* Set the maximum height for the expanded content */
+}
