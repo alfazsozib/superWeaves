@@ -44,7 +44,7 @@ function ThirdSection() {
           </div>
           <div>
             <img
-              className="w-[65rem] max-sm:-z-[10] max-sm:opacity-40 top-[-10rem] left-[4rem] relative"
+              className="w-[65rem] opacity-30 max-sm:-z-[10] max-sm:opacity-40 top-[-10rem] left-[4rem] relative"
               src={bgShadow}
               alt=""
             />
@@ -53,13 +53,13 @@ function ThirdSection() {
         <div className="card-line flex items-center">
           <div>
             <div className="polygon absolute right-96">
-              <img className="mr-60" src={pinkBlue} alt="" />
+              {/* <img className="mr-60" src={pinkBlue} alt="" /> */}
             </div>
-            <div className="cards relative flex justify-around max-sm:bottom-[200px]">
-              <div className="lg:flex md:flex pl-28 max-sm:p-4 max-sm:
-              grid max-sm:grid-cols-2 gap-[50px]">
+            <div className="cards relative flex max-sm:bottom-[200px]">
+              <div className="lg:flex md:flex  max-sm:p-4 max-sm:
+              grid max-sm:grid-cols-2 gap-[10px]">
                 {cardData.map((id, index) => (
-                  <div className="card">
+                  <div className="card w-[200px]">
                     <img className="" src={id.image} alt="" />
                   </div>
                   // <Canvas
@@ -86,7 +86,7 @@ function ThirdSection() {
       <div className="lg:flex md:flex justify-center  max-w-[1200px] mx-auto">
         <div className="text-right absolute max-sm:relative top-16 max-sm:top-[-140px] flex">
         <div className="">
-          <img className="w-96 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[20rem] max-sm:left-36" src={bgShadow2} alt="" />
+          <img className="w-96 opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[20rem] max-sm:left-36" src={bgShadow2} alt="" />
         </div>
           <p className="font-quantico  max-sm:text-left max-sm:p-4 w-[800px] max-sm:z-30 max-sm:w-full max-sm:font-normal max-sm:leading-relaxed text-xl  leading-loose font-semibold">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to
@@ -98,7 +98,7 @@ function ThirdSection() {
       </div>
        
         <div className="absolute max-sm:z-[-1] right-10 max-sm:right-30 max-sm:top-60">
-          <img className="" width={900} src={pinkBG} alt="" />
+          {/* <img className="" width={900} src={pinkBG} alt="" /> */}
         </div>
         <div className="relative w-[100%]  top-[500px] max-sm:top-[-80px]">
           <span className="text-2 md:ml-[500px] max-sm:text-2xl max-sm:p-4 text-4xl  font-superLagend flex">
@@ -150,7 +150,7 @@ function ThirdSection() {
             </div>
 
               <div>
-                <img className="absolute top-[40rem] max-sm:top-[43rem] max-sm:left-24 -z-[10]" src={pinkBG} alt="" />
+                {/* <img className="absolute top-[40rem] max-sm:top-[43rem] max-sm:left-24 -z-[10]" src={pinkBG} alt="" /> */}
               </div>
             </div>
             <div className="text-area max-w-[1200px] mx-auto ">
@@ -172,17 +172,17 @@ function ThirdSection() {
               <div className="text-are">
                 <p className="p-16 max-sm:p-4 z-10 max-sm:-z-[10] relative font-quantico text-2xl max-sm:text-xl max-sm:leading-relaxed leading-loose">
                   <div>
-                    <img
+                    {/* <img
                       width={800}
                       className="absolute left-[-200px] bottom-[-200px]"
                       src={yellowBG}
                       alt=""
-                    />
+                    /> */}
                   </div>
                   <div className="">
                     <img
                       width={200}
-                      className="absolute right-[0]  z-[-10] max-sm:z-[-1] bottom-[-120px]"
+                      className="absolute opacity-30 right-[0]  z-[-10] max-sm:z-[-1] bottom-[-120px]"
                       src={bgShadow3}
                       alt=""
                     />
@@ -240,12 +240,12 @@ function ThirdSection() {
                 <div className="text-area relative">
                   <p className="p-16 max-sm:p-4 text-center max-sm:text-left font-quantico text-2xl max-sm:text-xl max-sm:leading-relaxed leading-loose ">
                     <span>
-                      <img
+                      {/* <img
                         width={800}
                         className="absolute z-[-10] bottom-10 right-[-50px] overflow-hidden"
                         src={pinkBlue}
                         alt=""
-                      />
+                      /> */}
                     </span>
                     Trade, auction, and leverage your NFTs in a player-driven
                     market that values rarity, utility, and the story behind
