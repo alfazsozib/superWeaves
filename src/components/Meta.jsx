@@ -28,9 +28,9 @@ function Meta() {
       </div>
       <div className="">
         <div className="relative top-24 max-sm:top-[-50px]">
-          <div className="flex justify-around max-sm:flex max-sm:flex-col max-sm:justify-normal max-sm:gap-24 max-sm:p-4">
+          <div className="flex gap-28 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-24 max-sm:p-4">
             <div className="card-side">
-              <img className="relative w-[15rem] max-sm:mt-20 z-10 mx-auto" src={card} alt="card sample" />
+              <img className="relative w-[18rem] ml-20 max-sm:m-0 max-sm:mt-20 z-10 mx-auto" src={card} alt="card sample" />
               {/* <Canvas style={{height:"400px", width:"300px",position:"relative", zIndex:1}} camera={{ fov: 64,getViewBounds:50 ,position: [-2, 2, 0] }}>
                   <ambientLight intensity={5} />
                   <OrbitControls enableZoom={true} />
@@ -65,18 +65,18 @@ function Meta() {
                   alt=""
                 /> */}
               </div>
-              <h1 className="font-superLagend text-center mt-10 max-sm:text-center card-title text-2xl ">
+              <h1 className="font-superLagend text-center mt-10 ml-28 max-sm:ml-0 max-sm:text-center card-title text-2xl ">
               ExpStrife
               </h1>
               
             </div>
 
             <div className="text-side">
-              <h1 className="text-2 max-sm:p-4 gap-4 font-superLagend flex-col items-center text-4xl max-sm:text-xl">
+              <h1 className="text-2 max-sm:p-4 gap-4 font-superLagend  flex flex-col items-left text-4xl max-sm:text-xl">
                 <span>The Metaverse's </span>
                 <span>Game-Changer</span>
               </h1>
-              <p className="w-[40rem] text-[#333333] font-light max-sm:w-full mt-6 max-sm:mt-4 max-sm:text-xl max-sm:p-4 leading-loose max-sm:leading-relaxed text-lg font-superLagend">
+              <p className="w-[30rem]  text-[#333333] font-light max-sm:w-full mt-6 max-sm:mt-4 max-sm:text-lg max-sm:p-4 leading-[3rem] max-sm:leading-relaxed text-lg font-superLagend">
                 Welcome to SuperWeaves, the first application built by DWØPE.
                 This super app will revolutionize the way you engage with Web3.
                 Our platform combines trading, betting, and social gaming in one
