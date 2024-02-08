@@ -98,7 +98,7 @@ function Faq() {
             Frequently Asked Questions
           </h1>
         </div>
-        <div className="flex max-sm:flex max-sm:flex-col gap-24 max-sm:gap-10 text-[#e0dede]">
+        <div className="flex max-sm:flex max-sm:flex-col gap-24 max-sm:gap-10 text-[#f5f3f3]">
           <div className="flex flex-col gap-6">
           <div className="mt-20 max-sm:mt-4 w-full grid grid-cols-2 max-sm:flex max-sm:flex-col gap-10 max-sm:gap-4">
           {faqs.map((faq, index) => (
@@ -109,7 +109,7 @@ function Faq() {
               >
                 <h3 className="font-superLagend text-left relative left-0">{faq.question}</h3>
                 <svg
-                  className={`h-5 w-5 transform  opacity-40 text-[#fff8f8] transition-transform duration-300 ${
+                  className={`h-5 w-6 transform  opacity-60 text-[#fff8f8] transition-transform duration-300 ${
                     activeIndex === index ? "rotate-0" : "-rotate-180"
                   }`}
                   fill="none"
