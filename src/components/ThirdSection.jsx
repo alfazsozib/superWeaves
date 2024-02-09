@@ -87,7 +87,7 @@ function ThirdSection() {
       <div className="lg:flex md:flex max-w-[1200px] mx-auto">
         <div className="max-w-[1200px] mx-auto w-full text-left absolute max-sm:relative top-16 max-sm:top-[-140px] flex">
         <div className="overflow-hidden">
-          <img className="w-96 absolute left-[70rem] overflow-hidden opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[5rem] max-sm:left-[-6rem]" src={bgShadow2} alt="" />
+          <img className="w-96 absolute left-[64rem] overflow-hidden opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[5rem] max-sm:left-[-6rem]" src={bgShadow2} alt="" />
         </div>
           <p className="font-superLagend lg:relative max-sm:top-4 max-sm:left-[-2rem] lg:left-[4rem] text-[#333333] lg:mt-28 max-sm:mt-[-8rem]  max-sm:text-left text-left max-sm:p-4 w-[800px] max-sm:z-30 max-sm:w-full max-sm:font-normal max-sm:leading-relaxed text-lg max-sm:text-lg leading-loose">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to
@@ -106,7 +106,7 @@ function ThirdSection() {
         <div className="absolute max-sm:z-[-1] right-10 max-sm:right-30 max-sm:top-60">
           {/* <img className="" width={900} src={pinkBG} alt="" /> */}
         </div>
-        <div className="relative w-[100%]  top-[500px] max-sm:top-[-80px]">
+        <div className="relative w-[100%]  top-[425px] max-sm:top-[-60px]">
           
           <span className="text-2 md:ml-[500px] max-sm:text-2xl max-sm:p-4 text-4xl  font-superLagend flex">
             Strategize, Trade, Thrive

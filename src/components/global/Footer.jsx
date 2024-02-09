@@ -19,10 +19,10 @@ function Footer() {
         <div className='menu flex gap-10 font-mono z-10'>
             {/* <span className=' font-semibold bg-gradient-to-r from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'>Contact</span> */}
             {/* <span className=' font-semibold bg-gradient-to-r from-[#ff5136] to-[#f80bd8] text-transparent bg-clip-text'>Support </span> */}
-            <span className='card-title font-semibold   text-transparent bg-clip-text'><a href="https://dwope.works/terms">Terms Of Policy</a> </span>
+            <span className='card-title font-semibold text-transparent bg-clip-text'><a href="https://dwope.works/terms">Terms Of Policy</a> </span>
             <span className='card-title font-semibold text-transparent bg-clip-text'><a href="https://dwope.works/privacy">Privacy Policy</a> </span>
         </div> 
-         <div className='cpyright font-semibold card-title text-transparent bg-clip-text'>
+         <div className=' font-semibold card-title text-transparent bg-clip-text'>
             <span>Copyright © 2024 DWOPE. </span>
         </div>
         </div>
