@@ -44,7 +44,7 @@ function ThirdSection() {
           </div>
           <div>
             <img
-              className="w-[85rem] opacity-30 max-sm:-z-[10] max-sm:opacity-40 top-[-8rem] right-[12rem] relative"
+              className="w-[85rem] opacity-30 max-sm:-z-[10] max-sm:opacity-30 top-[-8rem] right-[80rem] relative"
               src={bgShadow}
               alt=""
             />
@@ -87,7 +87,7 @@ function ThirdSection() {
       <div className="lg:flex md:flex max-w-[1200px] mx-auto">
         <div className="max-w-[1200px] mx-auto w-full text-left absolute max-sm:relative top-16 max-sm:top-[-140px] flex">
         <div className="overflow-hidden">
-          <img className="w-96 absolute left-[60rem] overflow-hidden opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[5rem] max-sm:left-[-6rem]" src={bgShadow2} alt="" />
+          <img className="w-96 absolute left-[70rem] overflow-hidden opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[5rem] max-sm:left-[-6rem]" src={bgShadow2} alt="" />
         </div>
           <p className="font-superLagend lg:relative lg:left-[4rem] text-[#333333] lg:mt-28 max-sm:mt-[-6rem] max-sm:text-left text-left max-sm:p-4 w-[800px] max-sm:z-30 max-sm:w-full max-sm:font-normal max-sm:leading-relaxed text-lg max-sm:text-lg leading-loose">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to
@@ -189,7 +189,7 @@ function ThirdSection() {
                   <div className="">
                     <img
                       width={200}
-                      className="absolute opacity-30 right-[15rem]  z-[-10] max-sm:z-[-1] bottom-[-120px]"
+                      className="absolute lg:w-[20rem] opacity-30 right-[85rem]  z-[-10] max-sm:z-[-1] bottom-[-120px]"
                       src={bgShadow3}
                       alt=""
                     />

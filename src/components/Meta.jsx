@@ -72,7 +72,7 @@ function Meta() {
             </div>
 
             <div className="text-side">
-              <h1 className="text-2 max-sm:p-4 gap-4 font-superLagend flex-col items-center text-4xl max-sm:text-xl">
+              <h1 className="text-2 max-sm:p-4 gap-4  font-superLagend flex-col items-center text-4xl max-sm:text-xl">
                 <span>The Metaverse's </span>
                 <span>Game-Changer</span>
               </h1>
