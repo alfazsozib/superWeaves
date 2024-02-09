@@ -76,16 +76,16 @@ function Faq() {
 
   return (
     <div className="faq-section relative max-w-[1200px] mx-auto">
-      <div className="absolute max-sm:hidden  left-0">
+      <div className="absolute max-sm:hidden  left-[-25rem] opacity-30">
         <img width={200} src={fl1} alt="" />
       </div>
-      <div className="absolute max-sm:hidden  right-[-70px] overflow-hidden">
+      <div className="absolute max-sm:hidden  right-[-400px] opacity-30 overflow-hidden">
         <img width={150} src={fl2} alt="" />
       </div>
-      <div className="absolute max-sm:hidden  left-0 bottom-[-80px] rotate-12 overflow-hidden">
+      <div className="absolute max-sm:hidden  left-[-28rem] opacity-30 bottom-[-90px] rotate-12 overflow-hidden">
         <img width={200} src={fl3} alt="" />
       </div>
-      <div className="absolute max-sm:hidden  right-2 bottom-[-150px] rotate-45 overflow-hidden">
+      <div className="absolute max-sm:hidden  right-[-20rem] opacity-30 bottom-[-150px] rotate-45 overflow-hidden">
         <img width={150} src={fl4} alt="" />
       </div>
       <div className="flex flex-col justify-center relative items-center gap-14">

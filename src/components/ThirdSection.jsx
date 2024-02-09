@@ -58,7 +58,7 @@ function ThirdSection() {
             <div className="polygon absolute right-96">
               {/* <img className="mr-60" src={pinkBlue} alt="" /> */}
             </div>
-            <div className="cards relative flex max-sm:bottom-[200px]">
+            <div className="cards relative flex max-sm:bottom-[200px] max-sm:top-[-20rem]">
               <div className="lg:flex md:flex  max-sm:p-4 max-sm:
               grid max-sm:grid-cols-2 gap-[10px]">
                 {cardData.map((id, index) => (
@@ -89,7 +89,7 @@ function ThirdSection() {
         <div className="overflow-hidden">
           <img className="w-96 absolute left-[70rem] overflow-hidden opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[5rem] max-sm:left-[-6rem]" src={bgShadow2} alt="" />
         </div>
-          <p className="font-superLagend lg:relative lg:left-[4rem] text-[#333333] lg:mt-28 max-sm:mt-[-6rem] max-sm:text-left text-left max-sm:p-4 w-[800px] max-sm:z-30 max-sm:w-full max-sm:font-normal max-sm:leading-relaxed text-lg max-sm:text-lg leading-loose">
+          <p className="font-superLagend lg:relative max-sm:top-4 max-sm:left-[-2rem] lg:left-[4rem] text-[#333333] lg:mt-28 max-sm:mt-[-8rem]  max-sm:text-left text-left max-sm:p-4 w-[800px] max-sm:z-30 max-sm:w-full max-sm:font-normal max-sm:leading-relaxed text-lg max-sm:text-lg leading-loose">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to
             engage in secure, and truly decentralized transactions that affirm
             your true ownership of digital assets.
@@ -189,7 +189,7 @@ function ThirdSection() {
                   <div className="">
                     <img
                       width={200}
-                      className="absolute lg:w-[20rem] opacity-30 right-[85rem]  z-[-10] max-sm:z-[-1] bottom-[-120px]"
+                      className="absolute lg:w-[20rem] max-sm:w-[10rem] opacity-30 right-[85rem] max-sm:right-[-10px]  z-[-10] max-sm:z-[-1] bottom-[-120px]"
                       src={bgShadow3}
                       alt=""
                     />
