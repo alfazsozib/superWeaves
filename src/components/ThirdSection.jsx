@@ -230,7 +230,7 @@ function ThirdSection() {
                         alt="av"
                       />
                     </div>
-                    <div className="data-sec px-4 py-2 max-sm:py-1">
+                    <div className="data-sec text-[#e0dede] px-4 py-2 max-sm:py-1">
                       <div className="flex justify-between max-sm:gap-2">
                         <span className="font-superLagend text-lg max-sm:text-sm">
                           {item.title}
@@ -239,7 +239,7 @@ function ThirdSection() {
                           {item.id}
                         </span>
                       </div>
-                      <span>{item.about}</span>
+                      <span className="">{item.about}</span>
                     </div>
                   </div>
                 ))}
