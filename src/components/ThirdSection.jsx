@@ -53,7 +53,7 @@ function ThirdSection() {
         
       </div>
 
-      <div className="card-line flex items-center">
+      <div className="card-line flex items-center w-full max-w-[1880px] mx-auto">
           <div>
             <div className="polygon absolute right-96">
               {/* <img className="mr-60" src={pinkBlue} alt="" /> */}
@@ -84,16 +84,19 @@ function ThirdSection() {
         </div>
       
       <div className="trade-sec relative">
-      <div className="lg:flex md:flex justify-center  max-w-[1200px] mx-auto">
-        <div className="text-right absolute max-sm:relative top-16 max-sm:top-[-140px] flex">
-        <div className="">
-          <img className="w-96 opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[20rem] max-sm:left-60" src={bgShadow2} alt="" />
-        </div>
-          <p className="font-superLagend text-[#333333] lg:mt-28 max-sm:text-left max-sm:p-4 w-[800px] max-sm:z-30 max-sm:w-full max-sm:font-normal max-sm:leading-relaxed text-lg leading-loose font-semibold">
+      
+      <div className="max-w-[1200px] mx-auto">
+        <div className="text-left absolute max-sm:relative top-16 max-sm:top-[-140px] flex">
+        <p className="font-superLagend text-[#333333] lg:mt-28 max-sm:text-left max-sm:p-4 w-[800px] max-sm:z-30 max-sm:w-full max-sm:font-normal max-sm:leading-relaxed text-lg leading-loose font-semibold">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to
             engage in secure, and truly decentralized transactions that affirm
             your true ownership of digital assets.
           </p>
+        
+        <div className="absolute">
+          <img className="w-80  right-[-20rem] opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[20rem] max-sm:left-60" src={bgShadow2} alt="" />
+        </div>
+          
         </div>
         
       </div>
