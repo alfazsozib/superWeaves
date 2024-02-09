@@ -84,18 +84,20 @@ function ThirdSection() {
         </div>
       
       <div className="trade-sec relative">
-      
-      <div className="max-w-[1200px] mx-auto">
-        <div className="text-left absolute max-sm:relative top-16 max-sm:top-[-140px] flex">
-        <p className="font-superLagend text-[#333333] lg:mt-28 max-sm:text-left max-sm:p-4 w-[800px] max-sm:z-30 max-sm:w-full max-sm:font-normal max-sm:leading-relaxed text-lg leading-loose font-semibold">
+      <div className="lg:flex md:flex max-w-[1200px] mx-auto">
+        <div className="max-w-[1200px] mx-auto w-full text-left absolute max-sm:relative top-16 max-sm:top-[-140px] flex">
+        <div className="overflow-hidden">
+          <img className="w-96 absolute left-[60rem] overflow-hidden opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[5rem] max-sm:left-[-6rem]" src={bgShadow2} alt="" />
+        </div>
+          <p className="font-superLagend lg:relative lg:left-[4rem] text-[#333333] lg:mt-28 max-sm:mt-[-6rem] max-sm:text-left text-left max-sm:p-4 w-[800px] max-sm:z-30 max-sm:w-full max-sm:font-normal max-sm:leading-relaxed text-lg max-sm:text-lg leading-loose">
             Harness the power of the LUKSO blockchain's groundbreaking LSPs to
             engage in secure, and truly decentralized transactions that affirm
             your true ownership of digital assets.
           </p>
         
-        <div className="absolute">
+        {/* <div className="absolute">
           <img className="w-80  right-[-20rem] opacity-30 max-sm:z-0 max-sm:w-56 max-sm:absolute max-sm:top-[20rem] max-sm:left-60" src={bgShadow2} alt="" />
-        </div>
+        </div> */}
           
         </div>
         
@@ -105,6 +107,7 @@ function ThirdSection() {
           {/* <img className="" width={900} src={pinkBG} alt="" /> */}
         </div>
         <div className="relative w-[100%]  top-[500px] max-sm:top-[-80px]">
+          
           <span className="text-2 md:ml-[500px] max-sm:text-2xl max-sm:p-4 text-4xl  font-superLagend flex">
             Strategize, Trade, Thrive
           </span>
